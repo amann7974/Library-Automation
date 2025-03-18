@@ -1,0 +1,11 @@
+controller --- CRUD (create, read, update, delete) operation
+middlewares -- dont allow to access other user to faculty or admin dashboard
+node_modules  --- packages
+public --- images, static files which can access by anyone.
+utils  --- databases connection , authethentication
+views  ---  frontend
+.env   --- screct links or url
+app.js   ----- main entry point
+package-lock.json  -----  description about the dependencies of packages
+package.json  ---- dependencies (like a header in c++.h, or packages in java)
+.gitignore   ----  used for not to push file on github which developer not want to share

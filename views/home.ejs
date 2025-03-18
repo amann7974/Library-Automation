@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLIET Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              "fade-in": "fadeIn 1s ease-in",
+              "slide-up": "slideUp 0.5s ease-out",
+              "bounce-slow": "bounce 3s infinite",
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(20px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-gradient-to-br from-purple-50 to-blue-50">
+    <!-- Hero Section with Enhanced Background -->
+    <section class="relative min-h-screen overflow-hidden pb-2 md:pb-0">
+      <!-- Dynamic Background with Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/images/hero.jpg"
+          class="w-full h-full object-cover scale-110 animate-pulse-slow"
+          alt="Library"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-violet-900/90 via-indigo-900/85 to-purple-900/90"
+        ></div>
+        <!-- Animated Shapes -->
+        <div class="absolute inset-0 opacity-30">
+          <div
+            class="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-float"
+          ></div>
+          <div
+            class="absolute top-1/3 right-1/4 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-float"
+            style="animation-delay: -2s"
+          ></div>
+          <div
+            class="absolute bottom-1/4 left-1/3 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-float"
+            style="animation-delay: -4s"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Sticky Enhanced Navbar -->
+      <nav
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+        id="navbar"
+      >
+        <div
+          class="relative flex items-center justify-between px-4 py-2 bg-white/10 backdrop-blur-md border-b border-white/10 shadow-lg"
+        >
+          <!-- Logo and Brand -->
+          <div class="flex items-center gap-3">
+            <a href="/" class="flex items-center">
+              <img
+                src="/images/logo.png"
+                alt="SLIET logo"
+                class="w-10 h-10 rounded-full ring-2 ring-white/50 hover:scale-105 transition-transform"
+              />
+            </a>
+            <span class="text-white/90 font-semibold text-sm md:text-base"
+              >SLIET LIBRARY</span
+            >
+          </div>
+
+          <!-- Navigation and Search Container -->
+          <div class="hidden md:flex items-center gap-4">
+            <!-- Navigation Buttons -->
+            <a
+              href="/"
+              class="px-4 py-1.5 text-sm text-white hover:bg-white/20 rounded-full transition duration-300 hover:scale-105"
+              >Home</a
+            >
+            <a
+              href="/pages/login/faculty"
+              class="px-4 py-1.5 text-sm bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white rounded-full transition duration-300 hover:scale-105"
+              >Faculty Login</a
+            >
+            <a
+              href="/pages/login/admin"
+              class="px-4 py-1.5 text-sm bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full transition duration-300 hover:scale-105"
+              >Admin Login</a
+            >
+
+            <!-- Search Bar (moved inside navigation container) -->
+            <div class="relative w-72">
+              <input
+                type="text"
+                placeholder="Search for books..."
+                class="w-full px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all text-sm pr-10"
+              />
+              <button
+                class="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10"
+              >
+                <i class="fas fa-search text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hamburger Button -->
+          <button
+            id="menuBtn"
+            class="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                class="hamburger"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path
+                class="close hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div
+            id="menu"
+            class="hidden absolute top-full left-0 right-0 bg-purple-900/95 backdrop-blur-md border-b border-white/10 p-4 md:hidden shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <!-- Mobile Navigation -->
+              <div class="flex flex-col gap-3">
+                <a
+                  href="/"
+                  class="px-4 py-2.5 text-white hover:bg-white/20 rounded-lg transition text-center text-sm font-medium"
+                  >Home</a
+                >
+                <a
+                  href="/pages/login/faculty"
+                  class="px-4 py-2.5 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white rounded-lg transition text-center text-sm font-medium"
+                  >Faculty Login</a
+                >
+                <a
+                  href="/pages/login/admin"
+                  class="px-4 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-lg transition text-center text-sm font-medium"
+                  >Admin Login</a
+                >
+              </div>
+
+              <!-- Mobile Search -->
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Search for books..."
+                  class="w-full px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all text-sm"
+                />
+                <button
+                  class="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10"
+                >
+                  <i class="fas fa-search text-sm"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Add margin-top to hero content to accommodate fixed navbar -->
+      <div
+        class="relative z-10 flex flex-col md:flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-16 mt-20 md:mt-24"
+      >
+        <!-- Left Content -->
+        <div class="text-left md:text-center lg:text-left md:w-full lg:w-1/2 space-y-6">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold animate-fade-in bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200 leading-tight"
+          >
+            Discover Your Next <br />
+            Great Read at <br />
+            SLIET Library
+          </h1>
+          <h3 class="text-lg text-purple-100 animate-slide-up max-w-md md:mx-auto lg:mx-0">
+            Your gateway to knowledge and research excellence at Sant Longowal
+            Institute of Engineering and Technology
+          </h3>
+          <div class="space-x-4 pt-4 md:text-center lg:text-left">
+            <a
+              href="#"
+              class="inline-block px-6 py-2.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white hover:from-purple-600 hover:to-pink-600 transition duration-300 hover:scale-105 animate-slide-up shadow-lg hover:shadow-purple-500/50 text-sm"
+            >
+              Get Started
+            </a>
+            <a
+              href="#"
+              class="inline-block px-6 py-2.5 border-2 border-white/50 rounded-full text-white hover:bg-white/10 transition duration-300 hover:scale-105 animate-slide-up text-sm"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Content - Stats -->
+        <div class="md:w-full lg:w-1/2 mt-12 md:mt-16 lg:mt-0 grid grid-cols-2 gap-6 md:max-w-2xl lg:max-w-none mx-auto">
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition duration-300"
+          >
+            <h4 class="text-3xl font-bold text-white mb-2">10K+</h4>
+            <p class="text-purple-200">Books Available</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition duration-300"
+          >
+            <h4 class="text-3xl font-bold text-white mb-2">5K+</h4>
+            <p class="text-purple-200">Active Users</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition duration-300"
+          >
+            <h4 class="text-3xl font-bold text-white mb-2">500+</h4>
+            <p class="text-purple-200">Daily Visitors</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 transform hover:scale-105 transition duration-300"
+          >
+            <h4 class="text-3xl font-bold text-white mb-2">24/7</h4>
+            <p class="text-purple-200">Online Access</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced About Us Section -->
+    <section class="relative py-20 overflow-hidden">
+      <!-- Background with animated gradient -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-purple-900/95 via-indigo-900/95 to-purple-900/95"
+      >
+        <div class="absolute inset-0 opacity-30">
+          <!-- Animated shapes for background -->
+          <div
+            class="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-float"
+          ></div>
+          <div
+            class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-float"
+            style="animation-delay: -3s"
+          ></div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 relative">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-pink-200 mb-4"
+          >
+            Discover Our Library
+          </h2>
+          <p class="text-purple-100 text-lg max-w-2xl mx-auto">
+            Your gateway to knowledge and innovation at Sant Longowal Institute
+            of Engineering and Technology
+          </p>
+        </div>
+
+        <!-- Updated Features Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-8 max-w-4xl lg:max-w-7xl mx-auto"
+        >
+          <!-- Updated Resources Card with correct icon -->
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 transform hover:scale-105 transition duration-300 group"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="p-3 bg-purple-500/20 rounded-lg group-hover:bg-purple-500/30 transition-colors"
+              >
+                <i class="fas fa-book text-2xl text-purple-300"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2">
+                  Vast Collection
+                </h4>
+                <p class="text-purple-200 text-sm">
+                  10,000+ books, journals, and digital resources
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Access Card -->
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 transform hover:scale-105 transition duration-300 group"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="p-3 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors"
+              >
+                <i class="fas fa-laptop-code text-2xl text-blue-300"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2">
+                  Digital Access
+                </h4>
+                <p class="text-purple-200 text-sm">
+                  24/7 online access to e-resources
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Support Card -->
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 transform hover:scale-105 transition duration-300 group"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="p-3 bg-pink-500/20 rounded-lg group-hover:bg-pink-500/30 transition-colors"
+              >
+                <i class="fas fa-chalkboard-teacher text-2xl text-pink-300"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2">
+                  Expert Support
+                </h4>
+                <p class="text-purple-200 text-sm">
+                  Dedicated research assistance and workshops
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Spaces Card -->
+          <div
+            class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 transform hover:scale-105 transition duration-300 group"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="p-3 bg-indigo-500/20 rounded-lg group-hover:bg-indigo-500/30 transition-colors"
+              >
+                <i class="fas fa-users text-2xl text-indigo-300"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2">
+                  Study Spaces
+                </h4>
+                <p class="text-purple-200 text-sm">
+                  Collaborative and quiet study areas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-12">
+          <a
+            href="#services"
+            class="inline-block px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white hover:from-purple-600 hover:to-pink-600 transition duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/50"
+          >
+            Explore Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Contact Us Section -->
+    <section class="relative py-20 overflow-hidden bg-gradient-to-br from-indigo-900/95 via-purple-900/95 to-indigo-900/95">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-pink-200 mb-4"
+          >
+            Contact Us
+          </h2>
+          <p class="text-purple-100 text-lg max-w-2xl mx-auto">
+            Visit us or get in touch - we're here to help you access the
+            resources you need
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row lg:flex-row gap-12 items-start">
+          <!-- Contact Information -->
+          <div class="md:w-full lg:w-1/3 space-y-8 md:max-w-xl lg:max-w-none mx-auto">
+            <!-- Contact Cards -->
+            <div
+              class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 transform hover:scale-105 transition duration-300"
+            >
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-purple-500/20 rounded-lg">
+                  <i class="fas fa-location-dot text-2xl text-purple-300"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-semibold text-white mb-2">
+                    Location
+                  </h4>
+                  <p class="text-purple-200 text-sm">
+                    SLIET Longowal, Sangrur, Punjab 148106
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 transform hover:scale-105 transition duration-300"
+            >
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-pink-500/20 rounded-lg">
+                  <i class="fas fa-clock text-2xl text-pink-300"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-semibold text-white mb-2">Hours</h4>
+                  <p class="text-purple-200 text-sm">
+                    Monday - Friday: 9:00 AM - 8:00 PM<br />
+                    Saturday: 10:00 AM - 6:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 transform hover:scale-105 transition duration-300"
+            >
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-blue-500/20 rounded-lg">
+                  <i class="fas fa-envelope text-2xl text-blue-300"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-semibold text-white mb-2">Contact</h4>
+                  <p class="text-purple-200 text-sm">
+                    Email: library@sliet.ac.in<br />
+                    Phone: +91 1672-253175
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Map -->
+          <div class="md:w-full lg:w-2/3 h-[400px] rounded-xl overflow-hidden border border-white/20 backdrop-blur-md transform hover:scale-[1.02] transition duration-300">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.5185976666752!2d75.89799427563566!3d30.316999074649036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a087d3f41d8fd%3A0x92ceb4333cb8c592!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1701850431118!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="filter grayscale hover:grayscale-0 transition duration-300"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Professional Footer -->
+    <footer
+      class="relative bg-gradient-to-br from-gray-900 via-purple-900/95 to-gray-900"
+    >
+      <!-- Decorative elements -->
+      <div class="absolute inset-0 opacity-30">
+        <div
+          class="absolute bottom-0 left-0 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-3xl"
+        ></div>
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-3xl"
+        ></div>
+      </div>
+
+      <div class="relative container mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20">
+          <!-- About Column -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white">About SLIET Library</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+            Sant Longowal Institute of Engineering and Technology is a Govt. of India
+            established deemed university under Section 3 of the UGC Act 1956 for higher
+            education and research in India. The UG Program of SLIET is accredited as TIER 1 by the NBA.
+            </p>
+          </div>
+
+          <!-- Hours & Location -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white">Hours & Location</h3>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-clock text-purple-400"></i>
+                Mon-Fri: 9:00 AM - 8:00 PM
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-clock text-purple-400"></i>
+                Sat: 10:00 AM - 6:00 PM
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-location-dot text-purple-400"></i>
+                SLIET Longowal, Punjab 148106
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white">Contact Us</h3>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-phone text-purple-400"></i>
+                +91 1672-253175
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-envelope text-purple-400"></i>
+                library@sliet.ac.in
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-globe text-purple-400"></i>
+                www.sliet.ac.in
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Links & Copyright -->
+        <div class="pt-8 border-t border-gray-800">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <div class="flex items-center gap-6">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-purple-400 transition-colors"
+              >
+                <i class="fab fa-facebook text-xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-purple-400 transition-colors"
+              >
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-purple-400 transition-colors"
+              >
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-purple-400 transition-colors"
+              >
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+            </div>
+            <div class="text-gray-400 text-sm text-center md:text-left">
+              <span>© 2025 SLIET Library. All rights reserved.</span>
+              <span class="mx-2 hidden md:inline">|</span>
+              <span>Developed by <strong class="text-purple-400">ROHAN</strong> &
+                <strong class="text-purple-400">AMAN</strong></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Enhanced Script -->
+    <script>
+      // Hamburger Menu Toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("menu");
+      const hamburger = menuBtn.querySelector(".hamburger");
+      const close = menuBtn.querySelector(".close");
+      const navbar = document.getElementById("navbar");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        hamburger.classList.toggle("hidden");
+        close.classList.toggle("hidden");
+        // Add backdrop blur when menu is open
+        if (!menu.classList.contains("hidden")) {
+          navbar.classList.add("bg-purple-900/95");
+        } else if (window.scrollY <= 50) {
+          navbar.classList.remove("bg-purple-900/95");
+        }
+      });
+
+      // Enhanced Navbar Scroll Effect
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-purple-900/95");
+          navbar.classList.remove("bg-white/10");
+        } else if (menu.classList.contains("hidden")) {
+          navbar.classList.remove("bg-purple-900/95");
+          navbar.classList.add("bg-white/10");
+        }
+      });
+    </script>
+  </body>
+</html>

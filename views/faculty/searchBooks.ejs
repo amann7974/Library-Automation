@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books - SLIET Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen overflow-x-hidden">
+        <!-- Sidebar -->
+        <aside
+            class="fixed md:static top-0 left-0 h-full -translate-x-full md:translate-x-0 bg-gradient-to-b from-purple-900 to-indigo-900 w-64 flex-shrink-0 transition-transform duration-300 ease-in-out z-40"
+            id="sidebar">
+            <div class="p-4 border-b border-white/10">
+                <div class="flex items-center gap-3">
+                    <img src="/images/logo.png" alt="SLIET logo" class="w-10 h-10 rounded-full ring-2 ring-white/50">
+                    <h1 class="text-white font-semibold">SLIET LIBRARY</h1>
+                </div>
+            </div>
+        
+            <nav class="p-4 space-y-2">
+                <a href="/pages/faculty/dashboard"
+                    class="flex items-center gap-3 text-white/90 p-3 rounded-lg hover:bg-white/10 transition-colors">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/pages/faculty/dashboard/account"
+                    class="flex items-center gap-3 text-white/90 p-3 rounded-lg hover:bg-white/10 transition-colors">
+                    <i class="fas fa-user"></i>
+                    <span>My Account</span>
+                </a>
+                <a href="/pages/faculty/dashboard/searchBooks"
+                    class="flex items-center gap-3 text-white/90 p-3 rounded-lg hover:bg-white/10 transition-colors">
+                    <i class="fas fa-book"></i>
+                    <span>Search Books</span>
+                </a>
+                <a href="/pages/faculty/dashboard/issuedBooks"
+                    class="flex items-center gap-3 text-white/90 p-3 rounded-lg hover:bg-white/10 transition-colors">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Issued Books</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden w-full">
+            <!-- Header -->
+            <header class="bg-white shadow-sm">
+                <div class="flex items-center justify-between p-4">
+                    <button id="sidebarToggle"
+                        class="md:hidden text-gray-600 hover:text-gray-900 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+            
+                    <!-- Right side header content -->
+                    <div class="w-full flex items-center justify-between gap-6">
+                        <div class="relative">
+                            <input type="text" id="searchBook" placeholder="Search books..."
+                                class="w-48 md:w-64 px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm md:text-base">
+                            <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+            
+                        <div class="flex items-center gap-3 ml-auto">
+                            <img id="userProfilePic" src="https://ui-avatars.com/api/?name=Unknown" alt="User"
+                                class="w-8 h-8 rounded-full">
+                            <span id="userFullName" class="text-gray-700 font-medium hidden md:inline">Unknown</span>
+                            <a href="/api/logout" class="text-red-600 hover:text-red-700 ml-4" title="Logout">
+                                <i class="fas fa-sign-out-alt text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content Area -->
+            <main class="flex-1 overflow-y-auto bg-gray-50 p-6">
+                <div class="mb-8">
+                    <h1 class="text-2xl font-bold text-gray-800">Search Books</h1>
+                    <p class="text-gray-600">Find and request books from our library collection</p>
+                </div>
+
+                <!-- Search Section -->
+                <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 mb-6">
+                    <div class="max-w-xl mx-auto">
+                        <div class="relative">
+                            <input type="text" id="searchInput" 
+                                class="w-full px-4 py-3 pl-12 rounded-lg border border-gray-200 focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                                placeholder="Search by title, author, or ISBN...">
+                            <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Grid -->
+                <div id="searchResults" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Books will be displayed here dynamically -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Book Card Template -->
+    <template id="bookCardTemplate">
+        <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+            <div class="p-6">
+                <h5 class="text-lg font-semibold mb-2 text-gray-900 book-title"></h5>
+                <p class="text-gray-600 mb-2 text-sm book-author"></p>
+                <p class="text-gray-500 mb-2 text-sm book-isbn"></p>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="px-2 py-1 text-xs font-medium rounded-full book-status"></span>
+                </div>
+                <button class="request-book w-full py-2 px-4 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 disabled:opacity-50">
+                    Request Book
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Overlay and Scripts -->
+    <div id="sidebarOverlay" class="fixed inset-0 bg-black/50 hidden z-30" aria-hidden="true"></div>
+    
+    <script>
+        // Sidebar toggle functionality
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        function toggleSidebar() {
+            const isOpen = !sidebar.classList.contains('-translate-x-full');
+            if (isOpen) {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            } else {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            }
+        }
+
+        sidebarToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleSidebar();
+        });
+
+        overlay.addEventListener('click', toggleSidebar);
+
+        // Close sidebar when clicking outside
+        document.addEventListener('click', (e) => {
+            const isOpen = !sidebar.classList.contains('-translate-x-full');
+            const clickedInside = sidebar.contains(e.target) || sidebarToggle.contains(e.target);
+            if (isOpen && !clickedInside) {
+                toggleSidebar();
+            }
+        });
+
+        // Handle screen resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            } else {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+
+        // Prevent sidebar content clicks from closing
+        sidebar.addEventListener('click', (e) => e.stopPropagation());
+
+        // Update active link
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('bg-white/10');
+            }
+        });
+    </script>
+    
+    <!-- Page specific scripts -->
+    <script src="/js/faculty/secureDashboard.js"></script>
+    <script src="/js/faculty/searchBooks.js"></script>
+    <script src="/js/faculty/users.js"></script>
+    <!-- ...existing scripts... -->
+</body>
+</html>

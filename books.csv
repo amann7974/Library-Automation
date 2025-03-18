@@ -1,0 +1,1374 @@
+sno,title,totalCopies,availableCopies
+2,Design enterprise applications with java 2 platform,14,2
+3,Introduction to Expert System,17,3
+4,Experiments in Java,19,4
+5,Design of Unix OS,28,5
+6,Object oriented modelling and design,29,6
+7,Database System,30,7
+8,Business data Communication,31,8
+9,Data stuructures & algorithm analysis in C++,32,9
+10,Genetic Algorithms,58,10
+11,8086 family ,60,11
+12,Microprocessor and Interfacing,137,12
+13,Computer Organization,139,13
+14,Computer Architecture and Organisation,140,14
+15,Data Structure using C and C++,142,15
+16,An introduction to Data Structure with Applications,143,16
+17,Theory and Problems of Data Structure | S Lipschutz ,144,17
+18,Data Communication and Distributed Networks,146,18
+19,Oracle Application Server 10g,147,19
+20,Operation Research,148,20
+21,System Programming,149,21
+22,Computer Graphics,150,22
+23,Switching and Finite Automata Theory,151,23
+24,Elements of the Theory OF Computation,152,24
+25,Introduction to Algorithms,153,25
+26,Data Architecture and Parallel Processing,154,26
+27,Advanced Computer Architecture,155,27
+28,System Simulation with Digital Computer,156,28
+29,System Simulation,157,29
+30,Capasility Maturity Model,158,30
+31,The Design of Unix Operating System ,159,31
+32,Fundamentals of Digital Image Processing,161,32
+33,Data Compression Book,162,33
+34,Indispensable PC Hardware Book,163,34
+35,Upgrading and Repairing PC's ,164,35
+36,Upgrading and Repairing PC's ,165,36
+37,Software project management,3270,37
+38,Software testing fundamentals,3340,38
+39,Principles of Digital Communication System & Computer networks,3341,39
+40,Beginning Linux Programming,3342,40
+41,Bioinformatics,3343,41
+42,Data modelling essentials,3344,42
+43,Data mining with SQL server2005,3345,43
+44,TCP & IP Analysis & troubleshooting toolkit,3346,44
+45,Comdex computer course kit,3347,45
+46,Principles of Mobile computing,3348,46
+47,Visual basic 2005 programming,3349,47
+48,Communication systems and network,3350,48
+49,Operating systems,3351,49
+50,Testing computer software,3352,50
+51,Networking all in one desk reference,3354,51
+52,Expert oracle database architecture,3355,52
+53,Project Management,3363,53
+54,Database management systems,3364,54
+55,Operation research,3365,55
+56,Computer Graphics and multimedia,3366,56
+57,Decision support system & intelligent systems,3393,57
+58,Unix shell programming,3410,58
+59,Theory of automata formal lang. & computation,3412,59
+60,Beginning database design,3413,60
+61,Cobol programming,3414,61
+62,Programming with C++,3415,62
+63,Embedded systems,3417,63
+64,System Programming & Operating Systems | DM Dhamdhere,3418,64
+65,Sytem analysis & design methods,3419,65
+66,Neural networks,3420,66
+67,Software testing,3423,67
+68,Upgrading and Repairing networks,3424,68
+69,IPV6 network,3425,69
+70,Data structure and algos in java,3427,70
+71,Photoshop CS2,5672,71
+72,Photoshop CS2,5673,72
+73,Photoshop CS2,5674,73
+74,Visual basic .Net programming,5675,74
+75,Visual basic .Net programming,5676,75
+76,Visual basic .Net programming,5677,76
+77,PC upgrade and repair,5678,77
+78,PC upgrade and repair,5679,78
+79,PC upgrade and repair,5680,79
+80,Visual Basic 6 Programming,5681,80
+81,Visual Basic 6 Programming,5682,81
+82,Visual Basic 6 Programming,5683,82
+83,C++ Programming,5684,83
+84,C++ Programming,5685,84
+85,C++ Programming,5686,85
+86,Professional C++,5687,86
+87,Professional C++,5688,87
+88,Professional C++,5689,88
+89,CATIA for engineers and designer,5690,89
+90,CATIA for engineers and designer,5691,90
+91,CATIA for engineers and designer,5692,91
+92,PC troubleshooting and repair,5693,92
+93,PC troubleshooting and repair,5694,93
+94,PC troubleshooting and repair,5695,94
+95,Visual C++ 6 Programming,5696,95
+96,Visual C++ 6 Programming,5697,96
+97,Visual C++ 6 Programming,5698,97
+98,Beginning PHP 5,5699,98
+99,Beginning PHP 5,5700,99
+100,Beginning PHP 5,5701,100
+101,Beginning VB.Net 2003,5702,101
+102,Beginning VB.Net 2003,5703,102
+103,Beginning VB.Net 2003,5704,103
+104,Beginning VB.Net 2003,5705,104
+105,Beginning VB.Net 2003,5706,105
+106,Beginning VB.Net 2003,5707,106
+107,Illustrator CS2,5708,107
+108,Illustrator CS2,5709,108
+109,Illustrator CS2,5710,109
+110,PHP 5 and MySQL,5712,110
+111,PHP 5 and MySQL,5713,111
+112,Photoshop CS2,5714,112
+113,Photoshop CS2,5715,113
+114,Photoshop CS2,5716,114
+115,Redhat ,5717,115
+116,Redhat ,5718,116
+117,Redhat ,5719,117
+118,Mananging and troubleshooting networks,5720,118
+119,Mananging and troubleshooting networks,5721,119
+120,Mananging and troubleshooting networks,5722,120
+121,Mananging and troubleshooting networks,5723,121
+122,Software Design,5724,122
+123,Software Design,5725,123
+124,Software Design,5726,124
+125,Software Design,5727,125
+126,Database management,5728,126
+127,Database management,5729,127
+128,Database management,5730,128
+129,Database management,5731,129
+130,Management information system,5732,130
+131,Management information system,5733,131
+132,Management information system,5734,132
+133,Management information system,5735,133
+134,Simulation modelling and analysis,5736,134
+135,Simulation modelling and analysis,5737,135
+136,Simulation modelling and analysis,5738,136
+137,Simulation modelling and analysis,5739,137
+138,E- Security and You,5740,138
+139,E- Security and You,5741,139
+140,E- Security and You,5742,140
+141,E- Security and You,5743,141
+142,Cryptography for visual Basic,5744,142
+143,Cryptography for visual Basic,5745,143
+144,Cryptography for visual Basic,5746,144
+145,Cryptography for visual Basic,5747,145
+146,Introduction to Computers,5748,146
+147,Introduction to Computers,5749,147
+148,Introduction to Computers,5750,148
+149,Introduction to Computers,5751,149
+150,System Analysis and Design,5752,150
+151,System Analysis and Design,5753,151
+152,System Analysis and Design,5755,152
+153,Digital Logic Design Principles,5756,153
+154,Digital Logic Design Principles,5757,154
+155,Digital Logic Design Principles,5758,155
+156,Digital Logic Design Principles,5759,156
+157,Introduction to Programming and object oriented Design using Java,5760,157
+158,Introduction to Programming and object oriented Design using Java,5761,158
+159,Introduction to Programming and object oriented Design using Java,5762,159
+160,Introduction to Programming and object oriented Design using Java,5763,160
+161,Introduction to information technology,5764,161
+162,Introduction to information technology,5765,162
+163,Introduction to information technology,5766,163
+164,Introduction to information technology,5767,164
+165,8086 Microprocessor Programming and interfacing PC,5768,165
+166,8086 Microprocessor Programming and interfacing PC,5769,166
+167,8086 Microprocessor Programming and interfacing PC,5770,167
+168,8086 Microprocessor Programming and interfacing PC,5771,168
+169,Object Oriented Design and Patterns,5772,169
+170,Object Oriented Design and Patterns,5773,170
+171,Object Oriented Design and Patterns,5774,171
+172,Object Oriented Design and Patterns,5775,172
+173,Architecture of Computer Hardware and System Software,5776,173
+174,Architecture of Computer Hardware and System Software,5777,174
+175,Architecture of Computer Hardware and System Software,5778,175
+176,Architecture of Computer Hardware and System Software,5779,176
+177,Data Structure and Algorithms in java,5780,177
+178,Data Structure and Algorithms in java,5781,178
+179,Data Structure and Algorithms in java,5782,179
+180,Data Structure and Algorithms in java,5783,180
+181,Software Engineering,5784,181
+182,Software Engineering,5785,182
+183,Software Engineering,5786,183
+184,Software Engineering,5787,184
+185,Relational Database and SQL programming,5788,185
+186,Relational Database and SQL programming,5790,186
+187,Data Structure and Algorithms in C++,5792,187
+188,Data Structure and Algorithms in C++,5793,188
+189,Data Structure and Algorithms in C++,5794,189
+190,Data Structure and Algorithms in C++,5795,190
+191,Introduction to Computer Theory,5796,191
+192,Introduction to Computer Theory,5797,192
+193,Introduction to Computer Theory,5798,193
+194,Introduction to Computer Theory,5799,194
+195,Information Technology for management,5800,195
+196,Information Technology for management,5801,196
+197,Information Technology for management,5802,197
+198,Information Technology for management,5803,198
+199,Introduction to Language and Theory of Computation,5804,199
+200,Introduction to Language and Theory of Computation,5805,200
+201,Introduction to Language and Theory of Computation,5806,201
+202,Introduction to Language and Theory of Computation,5807,202
+203,Oracle database 10g The Complete Reference,5808,203
+204,Oracle database 10g The Complete Reference,5809,204
+205,Oracle database 10g The Complete Reference,5810,205
+206,Oracle database 10g The Complete Reference,5811,206
+207,Illustrator CS2,5812,207
+208,Visual C++ 6 Programming,5813,208
+209,VB.Net 2003,5814,209
+210,Beginning PHP 5,5816,210
+211,Operating System Concepts - Galvin,5817,211
+212,Operating System Concepts - Galvin,5819,212
+213,Operating System Concepts - Galvin,5820,213
+214,Wireless Networks,5821,214
+215,Wireless Networks,5822,215
+216,Wireless Networks,5823,216
+217,Wireless Networks,5824,217
+218,Introduction to Digital Systems,5825,218
+219,Introduction to Digital Systems,5826,219
+220,Introduction to Digital Systems,5827,220
+221,Introduction to Digital Systems,5828,221
+222,Programming Language Concepts,5829,222
+223,Programming Language Concepts,5830,223
+224,Programming Language Concepts,5831,224
+225,Programming Language Concepts,5832,225
+226,Wireless and Mobile Network Architecture,5833,226
+227,Wireless and Mobile Network Architecture,5834,227
+228,Wireless and Mobile Network Architecture,5835,228
+229,Wireless and Mobile Network Architecture,5836,229
+230,Foundation of Discrete Mathematics,5837,230
+231,Foundation of Discrete Mathematics,5838,231
+232,Foundation of Discrete Mathematics,5839,232
+233,Foundation of Discrete Mathematics,5840,233
+234,The Design and Analysis of Computer Algorithms,5841,234
+235,The Design and Analysis of Computer Algorithms,5842,235
+236,The Design and Analysis of Computer Algorithms,5843,236
+237,The Design and Analysis of Computer Algorithms,5844,237
+238,Management Information System,5845,238
+239,Management information system,5846,239
+240,Management information system,5847,240
+241,Management information system,5848,241
+242,Thinking in C++,5850,242
+243,Thinking in C++,5851,243
+244,Thinking in C++,5852,244
+245,Learning PC hardware,5853,245
+246,Learning PC hardware,5854,246
+247,Learning PC hardware,5855,247
+248,Learning Visual C++ 6,5857,248
+249,Learning Visual C++ 6,5858,249
+250,Learning Visual C++ 6,5859,250
+251,Learning Visual C++ 6,5860,251
+252,Learning Multimedia,5861,252
+253,Learning Multimedia,5862,253
+254,Learning Multimedia,5863,254
+255,Learning Multimedia,5864,255
+256,Learning MS-Powerpoint 2003,5865,256
+257,Learning MS-Powerpoint 2003,5866,257
+258,Learning MS-Powerpoint 2003,5867,258
+259,Learning MS-Powerpoint 2003,5868,259
+260,Learning Networking,5869,260
+261,Learning Networking,5870,261
+262,Learning Networking,5871,262
+263,Learning Networking,5872,263
+264,Learning Unix,5873,264
+265,Learning Unix,5874,265
+266,Learning Unix,5875,266
+267,Learning Unix,5876,267
+268,Learning MS-Office 2003,5877,268
+269,Learning MS-Office 2003,5878,269
+270,Learning MS-Office 2003,5879,270
+271,Learning MS-Office 2003,5880,271
+272,Learning Windows XP,5881,272
+273,Learning Windows XP,5882,273
+274,Learning Windows XP,5883,274
+275,Learning Windows XP,5884,275
+276,Learning Visual Basic- 6,5885,276
+277,Learning Visual Basic- 6,5886,277
+278,Learning Visual Basic -6,5887,278
+279,Learning Visual Basic -6,5888,279
+280,Learning Javascript,5889,280
+281,Learning Javascript,5890,281
+282,Learning Javascript,5891,282
+283,Learning Windows 98,5893,283
+284,Learning Windows 98,5894,284
+285,Learning Windows 98,5895,285
+286,Learning Windows 98,5896,286
+287,Learning Flash 2004,5897,287
+288,Learning Flash 2004,5898,288
+289,Learning Flash 2004,5899,289
+290,Learning Flash 2004,5900,290
+291,Learning Pagemaker 7,5901,291
+292,Learning Pagemaker 7,5902,292
+293,Learning Pagemaker 7,5903,293
+294,Learning Pagemaker 7,5904,294
+295,Wireless Application Protocol,5905,295
+296,Wireless Application Protocol,5906,296
+297,Wireless Application Protocol,5907,297
+298,Wireless Application Protocol,5908,298
+299,Redhat- Computer Reference,5909,299
+300,Redhat- Computer Reference,5911,300
+301,Redhat- Computer Reference,5912,301
+302,Object Oriented Analysis and Design,5913,302
+303,Object Oriented Analysis and Design,5914,303
+304,Object Oriented Analysis and Design,5915,304
+305,Object Oriented Analysis and Design,5916,305
+306,Programming Windows,5917,306
+307,Programming Windows,5918,307
+308,Programming Windows,5919,308
+309,Programming Windows,5920,309
+310,Distributed Systems and Networks,5921,310
+311,Distributed Systems and Networks,5922,311
+312,Distributed Systems and Networks,5923,312
+313,Distributed Systems and Networks,5924,313
+314,Professional C++,5925,314
+315,Datawarehousing Data Mining OLAP,5926,315
+316,Datawarehousing Data Mining OLAP,5927,316
+317,Datawarehousing Data Mining OLAP,5928,317
+318,Datawarehousing Data Mining OLAP,5929,318
+319,Neural Networks,5930,319
+320,Neural Networks,5931,320
+321,Neural Networks,5932,321
+322,Neural Networks,5933,322
+323,Software Engineering,5934,323
+324,Software Engineering,5935,324
+325,Software Engineering,5936,325
+326,Software Engineering,5937,326
+327,C++ Programming,5938,327
+328,Visual Basic. Net Programming,5939,328
+329,Visual Basic. Net Programming,5940,329
+330,C++ Programmingn Language,5941,330
+331,C++ Programmingn Language,5942,331
+332,Learning MS-Word 2003,5945,332
+333,Learning MS-Word 2003,5946,333
+334,Learning MS-Word 2003,5947,334
+335,Learning Java-2,5949,335
+336,Learning Java-2,5950,336
+337,Learning Java Servlet,5951,337
+338,Learning Java Servlet,5952,338
+339,Learning Oracle,5953,339
+340,Learning Oracle,5954,340
+341,Photoshop CS2,5955,341
+342,Photoshop version-9 CS2,5956,342
+343,CATIA for Engineers and Designer,5958,343
+344,PC troubleshooting and repair,5959,344
+345,PC upgrade and repair,5960,345
+346,Artificial Intelligence,5961,346
+347,Artificial Intelligence,5962,347
+348,Artificial Intelligence,5963,348
+349,Artificial Intelligence,5964,349
+350,Virtual Instrumentation using LabView,5965,350
+351,Virtual Instrumentation using LabView,5966,351
+352,Virtual Instrumentation using LabView,5967,352
+353,Virtual Instrumentation using LabView,5968,353
+354,Mastering Data Mining,5969,354
+355,Mastering Data Mining,5970,355
+356,Cryptography and Network Security,5971,356
+357,Cryptography and Network Security,5972,357
+358,PHP 5 and MySQL,5973,358
+359,Oracle Application Server 10g,5974,359
+360,Excel Data Analysis,5975,360
+361,Auto CAD- 2006 and Auto CAD LT-2006,5976,361
+362,Photoshop version-8 CS,5977,362
+363,Email Spam and Viruses ,5978,363
+364,C# 2005,5980,364
+365,Beginning Visual C# 2005,5981,365
+366,Access 2003- VBA,5982,366
+367,Java Server Programming,5984,367
+368,PC troubleshooting and repair,5985,368
+369,Visual Basic 6 Programming,5986,369
+370,Windows XP,5987,370
+371,Internet Getting Started,5988,371
+372,Favourable Excel Tips and Tricks,5989,372
+373,Linux Programming,5990,373
+374,Web Programming,5991,374
+375,CISCO Routers,5992,375
+376,Foundations of Computing,5994,376
+377,Programming Windows,5995,377
+378,Test Your C++ Skills,5996,378
+379,Let us C,5997,379
+380,Writing TSRs Through C,5998,380
+381,Let us C++ | Kanitkar,5999,381
+382,Understanding Pointers in C,6000,382
+383,Networking Essentials,6003,383
+384,Algorithms + Data Structure = Programs,6004,384
+385,Unix ,6005,385
+386,Wireless Application Programs Library,6007,386
+387,8086 Microprocessor,6009,387
+388,The Intel Microprocessor,6010,388
+389,Electronic Commerece,6011,389
+390,Fundamentals of Database Systems,6012,390
+391,C Puzzle Book,6013,391
+392,Data Structures using C and C++ ,6014,392
+393,Data Structures and Algorithms,6015,393
+394,Programming Languages,6016,394
+395,Neural Networks,6017,395
+396,Computer Networking With Internet Protocols and Technology,6018,396
+397,C++ - How to Program,6019,397
+398,Object Oriented Modelling and Design,6020,398
+399,Parallel Computer Architecture,6022,399
+400,Introducing MAYA7 3D for Beginners,6023,400
+401,Visual Basic 2005,6024,401
+402,Professional Visual Basic 2005,6025,402
+403,3D Human Modelling and Animataion,6026,403
+404,CCNA,6027,404
+405,Multimedia on PC,6028,405
+406,The Complete PC Upgrade and Maintenance Guide,6029,406
+407,Excel 2003 VBA,6030,407
+408,HTML black book,6031,408
+409,Visual Basic 2005,6032,409
+410,AutoCAD 2006 and Auto CAD LTLab,6033,410
+411,Introduction To Object Oriented Analysis and Design,6034,411
+412,Introduction To Object Oriented Analysis and Design,6035,412
+413,Introduction To Object Oriented Analysis and Design,6036,413
+414,Introduction To Object Oriented Analysis and Design,6037,414
+415,Data Structures With C++,6038,415
+416,Object oriented programming C++,6040,416
+417,Cryptography,6041,417
+418,Redhat- The Complete Reference,6042,418
+419,System Analysis and Design,6130,419
+420,SCJP,6131,420
+421,Fundamentals of Digital Design,6132,421
+422,Wireless and Mobile Networks,6133,422
+423,Computer Security,6134,423
+424,Software Testing Tools,6135,424
+425,Excel Advanced Report Development,6136,425
+426,NT Server 4,6137,426
+427,NT Server 4,6138,427
+428,Data Communication,68,501
+429,Design Microprocessor based system,71,502
+430,Local and Wide area network,86,503
+431,Neural network models,113,504
+432,Evolutionary learning  algorithms for neural adative control,114,505
+433,System Intigration networking and engineering,124,506
+434,Neural networks,561,507
+435,Genetic Algorithms,562,508
+436,Neural networks,564,509
+437,Speech and language processing,565,510
+438,More effective C++,568,511
+439,Microprocessor and interfacing,3445,512
+440,Microprocessor and microcomputer based system design ,3446,513
+441,SPM,3447,514
+442,software engineering,3448,515
+443,Ecommerce,3449,516
+444,Database mgt and oracle programming,3450,517
+445,Ecommerce and its applications,3451,518
+446,Database systems ,3464,519
+447,Database systems ,3465,520
+448,Computers Today,3466,521
+449,SQL PL/SQL,3467,522
+450,Pointer in c,3468,523
+451,C++ the complete reference,3469,524
+452,OOPS with c++,3470,525
+453,computer Graphics,3471,526
+454,Programming with java,3472,527
+455,computer Graphics,3473,528
+456,computer Graphics,3474,529
+457,computer architecture and organization,3475,530
+458,Introduction to logic and computer Design,3476,531
+459,Principles of Computer graphics,3478,532
+460,computer Graphics,3479,533
+461,Computer Security,3480,534
+462,Microprocessor and microcomputer based system design ,3490,535
+463,Visual C++ programming,3491,536
+464,C++,3492,537
+465,ATM networks,3493,538
+466,Microprocessor and microcontroller,3501,539
+467,Microprocessor and PC hardware and interfacing,3502,540
+468,matlab programming,3504,541
+469,Numerical methods using Matlab,3506,542
+470,Introduction to artificial Intelligence,3511,543
+471,Artificial neural network ,3512,544
+472,The intel microprocessor,3514,545
+473,Microprocessor and microcomputer based system design,3519,546
+474,Emmbedded System design,3576,547
+475,software testing Fundamentals,3577,548
+476,effective method for software testing,3578,549
+477,Fundamentals of Computer Organization and Design,3579,550
+478,Microprocessor and microcomputer based system design ,3580,551
+479,Principles of compiler Design,3582,552
+480,Acess 2007,3585,553
+481,C# Cookbook,3588,554
+482,C++ in Nuttshell,3589,555
+483,essential system administration,3590,556
+484,hacking the art of explotation,3591,557
+485,Head First SQL,3592,558
+486,Information architecture,3593,559
+487,IPV6 Essentials,3594,560
+488,Java in nuttshell,3595,561
+489,JSP,3596,562
+490,java sarvlet Programming,3597,563
+491,Linux Cookbook,3598,564
+492,My SQL Cookbook,3599,565
+493,Office 2007,3600,566
+494,Programming embedded systems,3601,567
+495,software testing Foundations,3602,568
+496,Software testing practise,3603,569
+497,Sql Tuning,3604,570
+498,TCP/Ip Guide,3605,571
+499,Understanding the linux kernal,3606,572
+500,Linux  ,3607,573
+501,Window Vista in Nuttshell,3608,574
+502,Write Great Code,3609,575
+503,Write Great Code,3610,576
+504,Software testing,3623,577
+505,Software quality,3624,578
+506,Introduction to Cryptography with java applets,3625,579
+507,Applied data structures with C++,3626,580
+508,The C Programming Language,3627,581
+509,digital logic and computer organization,3629,582
+510,digital logic and computer organization,3630,583
+511,Easy Web design,3631,584
+512,MS encyclopedia of networking,3632,585
+513,Distributed Operating system,3633,586
+514,digital image processing ,3634,587
+515,Numericals methods using matlab,3635,588
+516,database system using oracle,3636,589
+517,Object Orientied Interfaces and databases ,3637,590
+518,Introduction to artificial Intelligence,3638,591
+519,Discrete mathematics and graph theory,3639,592
+520,introduction to algorithms,3641,593
+521,insight into wavelets,3642,594
+522,8085 microprocessor programming and interfacing,3643,595
+523,matlab programming,3644,596
+524,Information tech ,3645,597
+525,Digital image processing,3646,598
+526,Graph theory,3647,599
+527,java how to program,3650,600
+528,Network security and management,3651,601
+529,Microprocessor and microcontroller,3652,602
+530,Digital logic design,3657,603
+531,Advanced microprocessor and peripherals,3659,604
+532,mastering C,3660,605
+533,Neural networks,3661,606
+534,OOPS with c++,3662,607
+535,Programming with java,3663,608
+536,Data structure ,3664,609
+537,Test your Skills in c,3665,610
+538,Introduction to neural networks using matlab 6.0,3666,611
+539,computer Graphics,3667,612
+540,Information technology network and internet,3709,613
+541,Foundation of information Technology,3710,614
+542,software engineering,3711,615
+543,OOPS and c++,3712,616
+544,Data structure and algorithms,3713,617
+545,Computer Fundamentals,3714,618
+546,OOPS and c++,3715,619
+547,Data structure and algorithms,3716,620
+548,C++ ,3717,621
+549,Introduction to DIP,3719,622
+550,Introduction to Cryptography with coding theory,3720,623
+551,Digital image processing,3721,624
+552,Logic and discrete mathematics,3722,625
+553,C Test Your Apptitude,3723,626
+554,Problems and solutions in C++,3724,627
+555,Grid Revolution,3725,628
+556,content networking in the mobile internet,3763,629
+557,Internet ,3768,630
+558,matlab,3781,631
+559,matlab,3782,632
+560,modern operating system,3783,633
+561,arificial intelligence and soft computing,3784,634
+562,OS,3785,635
+563,computer Graphics,3786,636
+564,Arificial intelligence ,3787,637
+565,Arificial intelligence ,3788,638
+566,Fiber optics Essentials,3789,639
+567,Problem solving cases in MS acess and Excel,3790,640
+568,multimedia in action,3791,641
+569,multimedia in action,3792,642
+570,Introduction to information Tech,3793,643
+571,Introduction to information Tech,3794,644
+572,Information tech. project management,3795,645
+573,e-commerce startegy tech and implementation,3796,646
+574,Digital image processing and computer vision,3797,647
+575,Digital image processing and computer vision,3798,648
+576,Discrete Mathematics,3799,649
+577,Discrete Mathematics,3800,650
+578,Advance computer architecture,3801,651
+579,multimedia system,3802,652
+580,multimedia system,3803,653
+581,Computer Architecture,3804,654
+582,Computer Architecture,3805,655
+583,introduction to data compression,3806,656
+584,introduction to data compression,3807,657
+585,CSS Cook book,3808,658
+586,Guide to managing and maintain your PC,3809,659
+587,algorithms,3810,660
+588,Algorithms,3811,661
+589,software engineering,3812,662
+590,Matlab and introduction with applications,3950,663
+591,Problem solving cases in MS acess and Excel,3951,664
+592,Ecommerce,3952,665
+593,software engineering,3953,666
+594,Computer architecture,3966,667
+595,Introducing Linux and Unix,3972,668
+596,Introducing Linux and Unix,3973,669
+597,effective method for software testing,3974,670
+598,effective method for software testing,3975,671
+599,database system concepts,3976,672
+600,Adhoc mobile wireless networks,3981,673
+601,Computer Networking illuminated,3982,674
+602,database eluminated ,3998,675
+603,database eluminated ,3999,676
+604,Numerical analysis in engg,4000,677
+605,Programming languages,4001,678
+606,Programming languages,4002,679
+607,Software quality,4003,680
+608,Software quality,4004,681
+609,Imformation security,4005,682
+610,Imformation security,4006,683
+611,a verbal and non verbal reasoning,4171,684
+612,a verbal and non verbal reasoning,4172,685
+613,Software Engineering,4173,686
+614,Software Engineering,4174,687
+615,Ecommerce and its applications,4175,688
+616,Ecommerce and its applications,4176,689
+617,Programming in c++,4177,690
+618,Programming in c++,4178,691
+619,a hand book of OOPS with java ,4179,692
+620,a hand book of OOPS with java ,4180,693
+621,Advance computer architecture,4181,694
+622,Advance computer architecture,4182,695
+623,Programming in java,4183,696
+624,Programming in java,4184,697
+625,Searching & Researching on the internet ,4185,698
+626,Computer Architecture ,4201,699
+627,Web Technologies,4213,700
+628,Web Technologies,4214,701
+629,computer architecture and organization,4215,702
+630,programming in ANSI C ,4216,703
+631,programming in ANSI C ,4217,704
+632,mastering C,4219,705
+633,Cryptography and network security,4220,706
+634,visual basic 6.0,4221,707
+635,Cryptography and network security,4276,708
+636,Distributed Operating system,4312,709
+637,Distributed  OS SysteM,4313,710
+638,fundamentals in Database systems,4314,711
+639,fundamentals in Database systems,4315,712
+640,compilers,4316,713
+641,compilers,4317,714
+642,Matlab and its application in engg,4318,715
+643,Matlab and its application in engg,4319,716
+644,Computer system design and architecture,4320,717
+645,Computer system design and architecture,4321,718
+646,Introduction to bioinformatics,4322,719
+647,Bio informatics,4323,720
+648,The Switch book,4331,721
+649,Office 2007,4332,722
+650,Office 2007,4333,723
+651,outlook 2007,4334,724
+652,outlook 2007,4335,725
+653,word 2007,4336,726
+654,word 2007,4337,727
+655,Apllied numerical method using matlab,4338,728
+656,Applied Numerical methods using matlab,4339,729
+657,MS office 2007,4340,730
+658,MS-office 2007 Bible,4341,731
+659,Excel 2007,4342,732
+660,Excel 2007,4343,733
+661,power point 2007,4344,734
+662,power point 2007,4345,735
+663,CCNA,4346,736
+664,CCNA,4347,737
+665,Applied Cryptography,4348,738
+666,Applied Cryptography,4349,739
+667,Flash and PHP,4350,740
+668,computer architecture and organization,4351,741
+669,computer architecture and organization,4352,742
+670,MS Office project 2007,4353,743
+671,MS Office project 2007,4354,744
+672,Bio informatics,4365,745
+673,Bio informatics,4366,746
+674,software engineering,4367,747
+675,software engineering,4368,748
+676,MS-office Excel 2007,4369,749
+677,MS-office Excel 2007,4370,750
+678,Advance computer architecture,4375,751
+679,database System ,4376,752
+680,Discrete Mathematics for computing,4377,753
+681,Scientific computing,4378,754
+682,fundamentals of data structure in C,4383,755
+683,network mangement,4399,756
+684,network mangement,4400,757
+685,Grid and cluster computing,4401,758
+686,MS encyclopedia of networking,4402,759
+687,MS encyclopedia of networking,4403,760
+688,digital logic and computer organization,4404,761
+689,digital logic and computer organization,4405,762
+690,Numericals methods with c++ programming,4406,763
+691,Numericals methods with c++ programming,4407,764
+692,OS internals and design principles,4408,765
+693,OS,4409,766
+694,JAVA SCRIPT,4410,767
+695,JAVA SCRIPT,4411,768
+696,MS-ASP .net 3.5,4412,769
+697,MS-ASP .net 3.5,4413,770
+698,Distributed SysteM,4414,771
+699,Distributed SysteM,4415,772
+700,HTML and XTHTML,4416,773
+701,HTML and XTHTML,4417,774
+702,windows server 2008 TCP/IP protocols  and services,4418,775
+703,windows server 2008 TCP/IP protocols  and services,4419,776
+704,MS Office project 2007,4420,777
+705,MS Office project 2007,4421,778
+706,Introducing MS ASP.NET ajax,4424,779
+707,Intoducing ASP.Net Aajax,4425,780
+708,understanding IPV6,4226,781
+709,understanding IPV6,4227,782
+710,Internet information services 7.0,4428,783
+711,Internet Information services 7.0,4429,784
+712,Grid and cluster computing,4437,785
+713,Software Testing,4444,786
+714,802.11 wireless networks,4451,787
+715,802.11 wireless networks,4452,788
+716,Apache Cookbook,4453,789
+717,Apache ,4454,790
+718,Apache ,4455,791
+719,applied software project management,4456,792
+720,Back up and recovery,4457,793
+721,Beginning perl for bioinformatics,4458,794
+722,C in a nuttshell,4459,795
+723,C# 3.0 Design Pattern,4460,796
+724,C++ in a nuttshell,4461,797
+725,C++ in a nuttshell,4462,798
+726,JDBC and java,4463,799
+727,JDBC and java,4464,800
+728,Enterprise java beans 3.0,4465,801
+729,Head First java,4466,802
+730,head first HTML with CSS and Xhtml,4467,803
+731,Head First java ,4468,804
+732,head first javascript,4469,805
+733,head first javascript,4470,806
+734,head first OOAD,4471,807
+735,Intlectual property and open source,4472,808
+736,Intlectual property and open source,4473,809
+737,IP routing,4474,810
+738,IPV6 Essentials,4475,811
+739,java enterprise in nuttshell,4476,812
+740,Java power Tool,4477,813
+741,Learning My sql,4478,814
+742,MS project 2007,4479,815
+743,MS project 2007,4480,816
+744,C# 2008,4481,817
+745,Java SE 6,4482,818
+746,java servlet and JSP,4483,819
+747,Network security Assesment,4484,820
+748,Network security tools,4485,821
+749,Oracle for Professional,4486,822
+750,PHP cookbook,4487,823
+751,programming amazon web services,4488,824
+752,programming amazon web services,4489,825
+753,Security and Useability,4490,826
+754,Security Power tools,4491,827
+755,software testing Fundamentals,4492,828
+756,software testing Fundamentals,4493,829
+757,Understanding TCP/IP,4494,830
+758,Understanding TCP/IP,4495,831
+759,web design in nuttshell,4496,832
+760,Windows Vista in a nuttshell,4497,833
+761,Programming 8 Bit PIC Microcontroller in C,4498,834
+762,C++,4915,835
+763,Fundamentals of algorithms,4916,836
+764,Database Illuminated,4917,837
+765,Formal Language and automata,4918,838
+766,Theory of Computation,4919,839
+767,Managing software projects,4920,840
+768,C programming for scientist and Engineer,4921,841
+769,C++ plus data structurs,4922,842
+770,C++ plus data structurs,4923,843
+771,Cryptography ,6198,844
+772,Database development and management,6199,845
+773,Artificial intelligence and soft computing,6200,846
+774,The design and analysis of computer algorithm,6541,847
+775,Computer Forensics and cybercrime,6542,848
+776,Distributed SysteM,6543,849
+777,Distributed SysteM,6544,850
+778,C# 2010for programmers,6545,851
+779,Digital Fundamentals,6546,852
+780,Database system the complete book,6547,853
+781,computer architecture and organization,6548,854
+782,Software testing ,6549,855
+783,Core java ,6550,856
+784,Core java ,6551,857
+785,introduction to digital computer design,6588,858
+786,introduction to digital computer design,6589,859
+787,data minning and data ware housing,6629,860
+788,data minning and data ware housing,6630,861
+789,Distributed systems,6692,862
+790,Distributed systems,6693,863
+791,Cloud computing,6706,864
+792,Introduction to cryptography,6707,865
+793,Guide to unix and linux,6714,866
+794,Guide to unix and linux,6715,867
+795,Guide to unix and linux,6716,868
+796,digital transmission and hierarchy and network,6717,869
+797,Fundamental of computer security,6718,870
+798,Fundamental of computer security,6719,871
+799,Advanced objective general knowledge,6797,872
+800,Advanced objective general knowledge,6798,873
+801,Advanced objective general knowledge,6799,874
+802,A modern approach to verbal reasoning,6800,875
+803,A modern approach to verbal reasoning,6801,876
+804,A modern approach to verbal reasoning,6802,877
+805,A modern approach to non-verbal reasoning,6803,878
+806,A modern approach to non-verbal reasoning,6804,879
+807,A modern approach to non-verbal reasoning,6805,880
+808,Software engineering,6806,881
+809,Software engineering,6807,882
+810,Software engineering,6808,883
+811,Digital communicaton,6810,884
+812,Digital communicaton,6811,885
+813,Text book of information technology,6815,886
+814,Text book of information technology,6816,887
+815,Text book of information technology,6817,888
+816,Programming in c++,6818,889
+817,Programming in c++,6819,890
+818,Programming in C++,6820,891
+819,computer system and programming,6821,892
+820,computer system and programming,6822,893
+821,computer system and programming,6823,894
+822,C and data structure,6824,895
+823,C and data structure,6825,896
+824,C and data structure,6826,897
+825,C and data structure,6827,898
+826,C and data structure,6828,899
+827,C and data structure,6829,900
+828,C++ programming with numerical techniques,6830,901
+829,C++ programming with numerical techniques,6831,902
+830,C++ programming with numerical techniques,6832,903
+831,Data communication and networking,6833,904
+832,Data communication and networking,6834,905
+833,Data communication and networking,6835,906
+834,MIS ,6836,907
+835,MIS ,6837,908
+836,MIS ,6838,909
+837,Artificial intelligance,6839,910
+838,Artificial intelligance,6840,911
+839,Artificial intelligance,6841,912
+840,Artificial intelligance,6842,913
+841,Artificial intelligance,6843,914
+842,Artifical intelligance,6844,915
+843,computer application in buisness,6845,916
+844,computer application in buisness,6846,917
+845,computer application in buisness,6847,918
+846,Programming in c and C++,6848,919
+847,Programming in c and C++,6849,920
+848,Programming in c and C++,6850,921
+849,Database mangement and oracle programming,6851,922
+850,Database mangement and oracle programming,6852,923
+851,Database mangement and oracle programming,6853,924
+852,Computer Fundamentals,6854,925
+853,Computer Fundamentals,6855,926
+854,Computer Fundamentals,6856,927
+855,Web design technology,6857,928
+856,Web design technology,6858,929
+857,Web design technology,6859,930
+858,Advanced Computer Architecture,6860,931
+859,Advanced Computer Architecture,6861,932
+860,Advanced Computer Architecture,6862,933
+861,Operating systems,6863,934
+862,Operating systems,6864,935
+863,Operating systems,6865,936
+864,Data base management system,6866,937
+865,Data base management system,6867,938
+866,Data base management system,6868,939
+867,Data base management system,6869,940
+868,Data base management system,6870,941
+869,Data base management system,6871,942
+870,Computer Fundamentals,6933,943
+871,Computer Fundamentals,6934,944
+872,C programming ,6935,945
+873,Web technology,6936,946
+874,Web technology,6937,947
+875,Introduction to information technology,6938,948
+876,Introduction to information technology,6939,949
+877,Introduction to information technology,6940,950
+878,Wireless communication system,6941,951
+879,Wireless communication system,6942,952
+880,Wireless communication system,6943,953
+881,Distributed computing,6944,954
+882,Software Testing,6945,955
+883,Software Testing,6946,956
+884,Mobile  Computing,6982,957
+885,MIS ,6983,958
+886,MIS ,6984,959
+887,Introduction to information technology,6985,960
+888,Introduction to information technology,6986,961
+889,Computer Dictionary,6987,962
+890,Computer Dictionary,6988,963
+891,Information technology principles and applications,6989,964
+892,Computer graphics and animations,6990,965
+893,Compiler Design,6991,966
+894,Compiler Design,6992,967
+895,C++ programming today,6993,968
+896,C++ programming today,6994,969
+897,Microsoft Office professonal 2010,6995,970
+898,Microsoft Office professonal 2010,6996,971
+899,Neural networks and learning machine,6997,972
+900,Computer networks,6998,973
+901,Computer networks,6999,974
+902,Software enginnering,7000,975
+903,E-commerce and indian perspective,7001,976
+904,Software Testing,7002,977
+905,Software Testing,7003,978
+906,an introduction to operating system,7004,979
+907,an introduction to operating system,7005,980
+908,Cyber Laws and IT protection,7006,981
+909,Cyber Laws and IT protection,7007,982
+910,Cyber Laws and IT protection,7008,983
+911,Cyber Laws and IT protection,7009,984
+912,Essential of e-commerce technology,7010,985
+913,Windows 7 ,7011,986
+914,Windows 7 ,7012,987
+915,Wireless and Mobile communication ,7013,988
+916,Wireless and Mobile communication ,7014,989
+917,Operating systems,7015,990
+918,Operating systems,7016,991
+919,Distributed systems,7017,992
+920,System analysis and design,7018,993
+921,System analysis and design,7019,994
+922,Software enginnering,7020,995
+923,Software enginnering,7021,996
+924,System analysis and design,7022,997
+925,System analysis and design,7023,998
+926,Computer Organization and design,7024,999
+927,Computer Organization and design,7025,1000
+928,Digital image processing,7026,1001
+929,Microsoft Office  2010,7027,1002
+930,Microsoft Office  2010,7028,1003
+931,Computer graphics multimedia and animations,7029,1004
+932,Computer graphicss multimedia and animations,7030,1005
+933,network security and management,7031,1006
+934,Software enginnering,7032,1007
+935,Software enginnering,7033,1008
+936,computer communication and computer networks,7034,1009
+937,Fundamental of computer networks,7035,1010
+938,Data base management system,7036,1011
+939,Data base management system,7037,1012
+940,data structure using c and C++,7038,1013
+941,data structure using c and C++,7039,1014
+942,Pattern recognition and image analysis,7040,1015
+943,Data base management system,7041,1016
+944,Data base management system,7042,1017
+945,Grid and clustter computing,7043,1018
+946,My SQl trouble shooting ,7064,1019
+947,automata theory,7072,1020
+948,automata theory,7073,1021
+949,Microsoft Office 2010,7121,1022
+950,Cryptography and security,7122,1023
+951,Cryptography and security,7123,1024
+952,Cryptography and security,7124,1025
+953,Cryptography and security,7125,1026
+954,Cryptography and security,7126,1027
+955,Cryptography and security,7127,1028
+956,Cryptography and security,7128,1029
+957,Cryptography and security,7129,1030
+958,OOPS,7130,1031
+959,OOPS,7131,1032
+960,OOPS,7132,1033
+961,OOPS,7133,1034
+962,adobe photoshop cs 5,7134,1035
+963,Advance data base management systems,7135,1036
+964,Advance data base management systems,7136,1037
+965,Cloud computing,7137,1038
+966,Tcp/IP,7138,1039
+967,Tcp/IP,7139,1040
+968,Tcp/IP,7140,1041
+969,Tcp/IP,7141,1042
+970,Applied cryptography,7142,1043
+971,Algorithms +  data structures = Program,7232,1044
+972,Algorithms +  data structures = Program,7233,1045
+973,Artificial neural network ,7234,1046
+974,Artificial neural network ,7235,1047
+975,C++ ,7236,1048
+976,C++ ,7237,1049
+977,Computer Organization and architecture,7238,1050
+978,Computer Organization and architecture,7239,1051
+979,Computer Organization and architecture,7240,1052
+980,data structure using c and C++,7241,1053
+981,data structure using c and C++,7242,1054
+982,Digital image processing and analysis,7243,1055
+983,Digital image processing and analysis,7244,1056
+984,Data Structure in C++,7245,1057
+985,Data Structure in C++,7246,1058
+986,Pattern recognition and image analysis,7247,1059
+987,Pattern recognition and image analysis,7248,1060
+988,Digital image processing and pattern recognition,7249,1061
+989,Digital image processing and pattern recognition,7250,1062
+990,data warehousing in the real world,7251,1063
+991,data warehousing in the real world,7252,1064
+992,Database systems,7253,1065
+993,Database systems,7254,1066
+994,database systems the complete book,7255,1067
+995,database systems the complete book,7256,1068
+996,Distributed systems,7257,1069
+997,Distributed systems,7258,1070
+998,Introduction to parrallel computing,7259,1071
+999,Software engineering,7260,1072
+1000,Software engineering,7261,1073
+1001,Software engineering theory Practise,7262,1074
+1002,Software engineering theory Practise,7263,1075
+1003,Hand book of computer science,7264,1076
+1004,Hand book of computer science,7265,1077
+1005,cyber Laws,7266,1078
+1006,cyber Laws,7267,1079
+1007,Software engineering,7272,1080
+1008,Software engineering,7273,1081
+1009,Software engineering,7274,1082
+1010,Software engineering,7275,1083
+1011,Biometric for network security,7276,1084
+1012,Andriod wireless application ,7280,1085
+1013,Andriod wireless application ,7281,1086
+1014,Andriod wireless application ,7282,1087
+1015,APPLICATIONS OF CRYPTOGRAPHY AND NETWORK SECURITY,7304,1088
+1016,ARTIFICIAL INTELLIGENCE AND NETWORK SECURITY,7305,1089
+1017,ARTIFICIAL INTELLIGENCE AND NETWORK SECURITY,7306,1090
+1018,APPLIED PATTERN RECOGNITION,7307,1091
+1019,BIOINFORMATICS,7372,1092
+1020,OPERATING SYSTEM DESIGN,7373,1093
+1021,LET US �C�,7427,1094
+1022,LET US �C�,7428,1095
+1023,LET US �C�,7429,1096
+1024,LET US �C�,7430,1097
+1025,DATA STRUCTURES AND ALGORITHMS USING C+++,7431,1098
+1026,DATA STRUCTURES AND ALGORITHMS USING C+++,7432,1099
+1027,OPERATING SYSTEMS,7452,1100
+1028,NETWORK SECURITY AND CRYPTOGRAPHY,7554,1101
+1029,THEORY OF COMPUTATION,7555,1102
+1030,CLOUD COMPUTING AND VIRTUALIZATION,7556,1103
+1031,DOT NET TECHNOLOGY,7557,1104
+1032,COMPUTER GRAPHICS 3RD ED.,7558,1105
+1033,COMPUTER GRAPHICS 3RD ED.,7559,1106
+1034,COMPUTER SYSTEM ARCHITECTURE,7560,1107
+1035,COMPUTER SYSTEM ARCHITECTURE,7561,1108
+1036,COMPUTER SYSTEM ARCHITECTURE,7562,1109
+1037,COMPUTER SYSTEM ARCHITECTURE,7563,1110
+1038,COMPUTER SYSTEM ARCHITECTURE,7564,1111
+1039,FUZZY ENGINEERING,7565,1112
+1040,CYBER LAWS AND IT PROTECTION,7566,1113
+1041,BIOINFORMATICS AND BIOPROGRAMMING IN C,7567,1114
+1042,RESEARCH METHODOLOGY,7568,1115
+1043,DATASTRUCTURES ALGORITHMS AND APPLICATIONS IN C++,7569,1116
+1044,SOFTWARE ENGINEERING: A PRECISE APPROACH,7570,1117
+1045,ARTIFICIAL NEURAL NETWORKS,7649,1118
+1046,ARTIFICIAL NEURAL NETWORKS,7650,1119
+1047,HTMLXHTML AND CSS 5TH ED.,7739,1120
+1048,NEURAL NETWORKS AND FUZZY LOGIC,7767,1121
+1049,NEURAL NETWORKS AND FUZZY LOGIC,7768,1122
+1050,GATE: COMPUTER SCIENCE AND INFORMATION TECHNOLOGY,7769,1123
+1051,ADVANCED UNIX PROGRAMMING,7770,1124
+1052,ADVANCED UNIX PROGRAMMING,7771,1125
+1053,APPLIED PATTERN RECOGNITION,7772,1126
+1054,INTRODUCTION TO GENETIC ALGORITHMS,7773,1127
+1055,INTRODUCTION TO GENETIC ALGORITHMS,7774,1128
+1056,ELEMENTS OF COMPILER DESIGN,7775,1129
+1057,ELEMENTS OF COMPILER DESIGN,7776,1130
+1058,AD HOC MOBILE WIRELESS NETWORKS: PRINCIPLESPROTOCOLS AND APPLICATIONS,7777,1131
+1059,INTRODUCTION TO THE SEMANTIC WEB AND SEMANTIC WEB SERVICES,7778,1132
+1060,DIGITAL IMAGE PROCESSING AND ANALYSIS: HUMAN AND COMPUTER VISION APPLICATIONS WITH CVIP TOOLS2ND ED.,7779,1133
+1061,DESIGN AND ANALYSIS OF ALGORITHMS,7827,1134
+1062,DESIGN AND ANALYSIS OF ALGORITHMS,7828,1135
+1063,PROGRAMMING IN JAVA2ND ED.,7829,1136
+1064,INTELLIGENT SYSTEMS,7848,1137
+1065,FEATURE EXTRACTION AND IMAGE PROCESSING FOR COMPUTER VISION,7876,1138
+1066,ADOBE FLASH PROFESSIONAL CS5 BIBLEW/CD,7939,1139
+1067,ANDROID APPLICATION DEVELOPMENT,7940,1140
+1068,BEGINNING LINUX PROGRAMMING4TH ED.,7941,1141
+1069,BEGINNING PHP6APACHEMYSQL WEB DEVELOPMENT,7942,1142
+1070,BIG DATA AND ANALYTICSW/CD,7943,1143
+1071,BIOMETRICS: CONCEPTS AND APPLICATIONSW/CD,7944,1144
+1072,BIOMETRICS: CONCEPTS AND APPLICATIONSW/CD,7945,1145
+1073,CRYPTOGRAPHY AND SECURITYW/CD,7946,1146
+1074,FORMAL LANGUAGES AND AUTOMATA THEORY,7947,1147
+1075,OPERATING SYSTEM CONCEPTS9TH ED.,7948,1148
+1076,OPERATING SYSTEM CONCEPTS9TH ED.,7949,1149
+1077,OPERATING SYSTEM CONCEPTS9TH ED.,7950,1150
+1078,OPERATING SYSTEM CONCEPTS9TH ED.,7951,1151
+1079,OPERATING SYSTEM CONCEPTS9TH ED.,7952,1152
+1080,PRINCIPLES OF SOFT COMPUTING2ND ED.W/CD,7953,1153
+1081,PYTHON OBJECTS,7954,1154
+1082,THEORY OF COMPUTATION: A PROBLEM-SOLVING APPROACHW/CD,7955,1155
+1083,WIRELESS NETWORKS,7956,1156
+1084,ADVANCED COMPUTER NETWORKS,7958,1157
+1085,ADVANCED COMPUTER NETWORKS,7959,1158
+1086,DIGITAL IMAGE PROCESSING FOR MEDICAL APPLICATIONS,7962,1159
+1087,HOW TO THINK ABOUT ALGORITHMS,7963,1160
+1088,BIOINFORMATICS,7992,1161
+1089,THEORY OF COMPUTATION,8028,1162
+1090,Data communication & networking,8581,1163
+1091,Data communication & networking,8582,1164
+1092,Software Project Management ,8583,1165
+1093,Software Project Management ,8584,1166
+1094,Artificial Intelligence,8585,1167
+1095,Artificial Intelligence,8586,1168
+1096,Shaums Outlines Discreate Mathematics,8587,1169
+1097,Shaums Outlines Data Structure,8588,1170
+1098,Software Engineering ,8589,1171
+1099,Software Engineering ,8590,1172
+1100,Digital Image Processing using MATLAB,8591,1173
+1101,Digital Image Processing using MATLAB,8592,1174
+1102,Introduction to Database System,8602,1175
+1103,Introduction to Database System,8603,1176
+1104,Computer Graphics,8604,1177
+1105,Computer Graphics,8605,1178
+1106,Digital Logic & computer design,8606,1179
+1107,Digital Logic & computer design,8607,1180
+1108,Computer Networks,8608,1181
+1109,Computer Networks,8609,1182
+1110,Computer Graphics,8610,1183
+1111,Computer Graphics,8611,1184
+1112,Princiles of grid computing,8612,1185
+1113,Trouble free C++,8613,1186
+1114,Artificial Intelligence,8614,1187
+1115,Artificial Intelligence,8615,1188
+1116,Software testing,8616,1189
+1117,Principle of Complier Design,8617,1190
+1118,Principle of Complier Design,8618,1191
+1119,Data Structure & Algorithms Using C++,8619,1192
+1120,Fundamentals of Software Engineering,8620,1193
+1121,Fundamentals of Software Engineering,8621,1194
+1122,Operating System Concept,8622,1195
+1123,Operating System Concept,8623,1196
+1124,Computer Graphics,8624,1197
+1125,Digital signal processing,8661,1198
+1126,Artificial Intelligence: A Modern Approach3e,8683,1199
+1127,Artificial Intelligence: A Modern Approach3e,8684,1200
+1128,Artificial Intelligence: A Modern Approach3e,8685,1201
+1129,Artificial Intelligence: A Modern Approach3e,8686,1202
+1130,Computer System ArchitectureRevised 3e,8687,1203
+1131,Computer System ArchitectureRevised 3e,8688,1204
+1132,Computer System ArchitectureRevised 3e,8689,1205
+1133,Computer System ArchitectureRevised 3e,8690,1206
+1134,Computer Organization and Architecture10e,8691,1207
+1135,Computer Organization and Architecture10e,8692,1208
+1136,Computer Organization and Architecture10e,8693,1209
+1137,Computer Organization and Architecture10e,8694,1210
+1138,Cloud Computing: ConceptsTechnology & Architecture1e,8695,1211
+1139,Cloud Computing: ConceptsTechnology & Architecture1e,8696,1212
+1140,Cloud Computing: ConceptsTechnology & Architecture1e,8697,1213
+1141,Cloud Computing: ConceptsTechnology & Architecture1e,8698,1214
+1142,Digital Image Processing4e,8699,1215
+1143,Digital Image Processing4e,8700,1216
+1144,Digital Image Processing4e,8701,1217
+1145,Digital Image Processing4e,8702,1218
+1146,Operating Systems: Internals and Design Principles9e,8703,1219
+1147,Operating Systems: Internals and Design Principles9e,8704,1220
+1148,Operating Systems: Internals and Design Principles9e,8705,1221
+1149,Operating Systems: Internals and Design Principles9e,8706,1222
+1150,C++ How to Program10e,8707,1223
+1151,C++ How to Program10e,8708,1224
+1152,C++ How to Program10e,8709,1225
+1153,C++ How to Program10e,8710,1226
+1154,Data Structures Using C1e,8711,1227
+1155,Data Structures Using C1e,8712,1228
+1156,Data Structures Using C1e,8713,1229
+1157,Data Structures Using C1e,8714,1230
+1158,Distributed Operating Systems,8715,1231
+1159,Distributed Operating Systems,8716,1232
+1160,Distributed Operating Systems,8717,1233
+1161,Distributed Operating Systems,8718,1234
+1162,Distributed Systems: Principles and Paradigms 2e,8719,1235
+1163,Distributed Systems: Principles and Paradigms 2e,8720,1236
+1164,Distributed Systems: Principles and Paradigms 2e,8721,1237
+1165,Distributed Systems: Principles and Paradigms 2e,8722,1238
+1166,Distributed Systems: Concepts and Design5e,8723,1239
+1167,Distributed Systems: Concepts and Design5e,8724,1240
+1168,Distributed Systems: Concepts and Design5e,8725,1241
+1169,Distributed Systems: Concepts and Design5e,8726,1242
+1170,Java How to Program: Early Objects11e,8727,1243
+1171,Java How to Program: Early Objects11e,8728,1244
+1172,Java How to Program: Early Objects11e,8729,1245
+1173,Java How to Program: Early Objects11e,8730,1246
+1174,Pattern Recognition and Image Analysis,8731,1247
+1175,Pattern Recognition and Image Analysis,8732,1248
+1176,Pattern Recognition and Image Analysis,8733,1249
+1177,Pattern Recognition and Image Analysis,8734,1250
+1178,Big Data Fundamentals: ConceptsDrivers & Techniques1e,8735,1251
+1179,Big Data Fundamentals: ConceptsDrivers & Techniques1e,8736,1252
+1180,Big Data Fundamentals: ConceptsDrivers & Techniques1e,8737,1253
+1181,Big Data Fundamentals: ConceptsDrivers & Techniques1e,8738,1254
+1182,C How to Program: with an introduction to C++8e,8739,1255
+1183,C How to Program: with an introduction to C++8e,8740,1256
+1184,C How to Program: with an introduction to C++8e,8741,1257
+1185,C How to Program: with an introduction to C++8e,8742,1258
+1186,Data Structures,8819,1259
+1187,Data Structures,8820,1260
+1188,Data Structures,8821,1261
+1189,Data Structures,8822,1262
+1190,Machine Learning,8823,1263
+1191,Machine Learning,8824,1264
+1192,Machine Learning,8825,1265
+1193,Machine Learning,8826,1266
+1194,Programming With C++,8827,1267
+1195,Programming With C++,8828,1268
+1196,Programming With C++,8829,1269
+1197,Programming With C++,8830,1270
+1198,Object Oriented Prog With C++,8831,1271
+1199,Object Oriented Prog With C++,8832,1272
+1200,Object Oriented Prog With C++,8833,1273
+1201,Object Oriented Prog With C++,8834,1274
+1202,Introduction to Algorithms3e,8841,1275
+1203,Introduction to Algorithms3e,8842,1276
+1204,Introduction to Algorithms3e,8843,1277
+1205,Introduction to Algorithms3e,8844,1278
+1206,Fundamentals of Software Engineering 5e,8845,1279
+1207,Fundamentals of Software Engineering 5e,8846,1280
+1208,Fundamentals of Software Engineering 5e,8847,1281
+1209,Fundamentals of Software Engineering 5e,8848,1282
+1210,Distributed Operating Systems: Concepts  and Design,8849,1283
+1211,Distributed Operating Systems: Concepts  and Design,8850,1284
+1212,Distributed Operating Systems: Concepts  and Design,8851,1285
+1213,Distributed Operating Systems: Concepts  and Design,8852,1286
+1214,Neural NetworksFuzzy Systems and Evolutionary Algorithms: Synthesis and Applications2e,8853,1287
+1215,Neural NetworksFuzzy Systems and Evolutionary Algorithms: Synthesis and Applications2e,8854,1288
+1216,Neural NetworksFuzzy Systems and Evolutionary Algorithms: Synthesis and Applications2e,8855,1289
+1217,Neural NetworksFuzzy Systems and Evolutionary Algorithms: Synthesis and Applications2e,8856,1290
+1218,Neural NetworksFuzzy Systems and Evolutionary Algorithms: Synthesis and Applications2e,8893,1291
+1219,Principles Of Compiler Design,8894,1292
+1220,Principles Of Compiler Design,8895,1293
+1221,Principles Of Compiler Design,8896,1294
+1222,Principles Of Compiler Design,8897,1295
+1223,Introduction to Genetic Algorithms,9013,1296
+1224,Introduction to Genetic Algorithms,9014,1297
+1225,Introduction to Genetic Algorithms,9015,1298
+1226,Introduction to Genetic Algorithms,9016,1299
+1227,Digital Image Processing & Analysis: Human & Computer Vision Applications with CVIP tools,9017,1300
+1228,Digital Image Processing & Analysis: Human & Computer Vision Applications with CVIP tools,9018,1301
+1229,Digital Image Processing & Analysis: Human & Computer Vision Applications with CVIP tools,9019,1302
+1230,Digital Image Processing & Analysis: Human & Computer Vision Applications with CVIP tools,9020,1303
+1231,Learning with Python,9089,1304
+1232,Learning with Python,9090,1305
+1233,Learning with Python,9091,1306
+1234,Learning with Python,9092,1307
+1235,Pankaj Jalote's Software Engineering: A Precise Approach,9093,1308
+1236,Pankaj Jalote's Software Engineering: A Precise Approach,9094,1309
+1237,Pankaj Jalote's Software Engineering: A Precise Approach,9095,1310
+1238,Pankaj Jalote's Software Engineering: A Precise Approach,9096,1311
+1239,Principles of Soft Computing3e,9097,1312
+1240,Principles of Soft Computing3e,9098,1313
+1241,Principles of Soft Computing3e,9099,1314
+1242,Principles of Soft Computing3e,9100,1315
+1243,The Internet of Things: Key Applications and Protocols,9101,1316
+1244,The Internet of Things: Key Applications and Protocols,9102,1317
+1245,The Internet of Things: Key Applications and Protocols,9103,1318
+1246,The Internet of Things: Key Applications and Protocols,9104,1319
+1247,Web Technologies: HTML JAVASCRIPT PHP JAVA JSP ASP.NET XML and Ajax Black Book ,9105,1320
+1248,Web Technologies: HTML JAVASCRIPT PHP JAVA JSP ASP.NET XML and Ajax Black Book ,9106,1321
+1249,Web Technologies: HTML JAVASCRIPT PHP JAVA JSP ASP.NET XML and Ajax Black Book ,9107,1322
+1250,Web Technologies: HTML JAVASCRIPT PHP JAVA JSP ASP.NET XML and Ajax Black Book ,9108,1323
+1251,MATLAB Programming for Engineers,9217,1324
+1252,MATLAB Programming for Engineers,9218,1325
+1253,MATLAB Programming for Engineers,9219,1326
+1254,MATLAB Programming for Engineers,9220,1327
+1255,Introduction to Automata TheoryLanguagesand Computation,9290,1328
+1256,Intergrated Approach to Software Engg.,9291,1329
+1257,Software Project Management: A Concise Study,9329,1330
+1258,Neural NetworksFuzzy Systems and Evolutionary Algorithms: Synthesis and Applications 2e,9330,1331
+1259,Operating System Concepts 8 ed.,9342,1332
+1260,Algorithm Design 1e,9580,1333
+1261,Computer Networks 5e,9581,1334
+1262,Cryptography and Network security 7e,9582,1335
+1263,Introduction to Database Systems Vol 1 3e,9583,1336
+1264,Neural networks and learning machines 3e,9584,1337
+1265,Compiler PrinciplesTechniques and Tools2e,9585,1338
+1266,Computer GraphicsC Version 2e,9586,1339
+1267,Computer Networks and Internets 6e,9587,1340
+1268,Computer System Architecture Revised 3e,9588,1341
+1269,Data Strcutures using C 1e,9589,1342
+1270,Data Strcutures using C and C++ 2e,9590,1343
+1271,Foundations of Software Testing 2e,9591,1344
+1272,Introduction to Automata Theory Languagesand Computation3e,9592,1345
+1273,Introduction to Programming using Python1e,9593,1346
+1274,modern operating systems4e,9594,1347
+1275,Operating Systems Design and Implementation3e,9595,1348
+1276,Pattern Recognition and Image Analysis,9596,1349
+1277,Python for Programmers,9597,1350
+1278,Thinking in C++: Introduction to Standard C++Vol I2e,9598,1351
+1279,Data Analytics,9657,1352
+1280,Data communication and networking,9658,1353
+1281,Data communication and networking,9659,1354
+1282,Data Structutes using C,9660,1355
+1283,Database System Concepts,9661,1356
+1284,Introduction to neural networks using matlab 6.0,9662,1357
+1285,Mastering Cloud Computing,9663,1358
+1286,Neural NetworksA Classroom Approach,9664,1359
+1287,Object Oriented Prog With C++,9665,1360
+1288,programming in ANSI C ,9666,1361
+1289,Programming with Java,9667,1362
+1290,Software Engineering: A Practitioner's Approach,9668,1363
+1291,Systems Programming,9669,1364
+1292,Algorithm Design 1e,9850,1365
+1293,Compiler PrinciplesTechniquesand Tools2e,9851,1366
+1294,Computer Forensics and Cyber Crime,9852,1367
+1295,Computer Graphics with OpenGL4e,9853,1368
+1296,Computer Networks6e,9854,1369
+1297,Computer VisionA Modern Approach2e,9855,1370
+1298,Cryptography and Network security 7e,9856,1371
+1299,Data and Computer Communications10e,9857,1372
+1300,Data Structures and Algorithms,9858,1373
+1301,Deep Learning,9859,1374
+1302,Effective Python2e,9860,1375
+1303,A First Course in Database Systems3e,9861,1376
+1304,Foundations of Modern Networking: SDNNFVQoEIoT and Cloud1e,9862,1377
+1305,Fundamentals of Database Systems7e,9863,1378
+1306,Fuzzy Sets and Fuzzy Logic: Theory and Applications,9864,1379
+1307,High Speed Networks and Internets2e,9865,1380
+1308,Internetworking with TCP/IP Volume 1 6e,9866,1381
+1309,An Introduction to Database Systems8e,9867,1382
+1310,Machine Learning with Python for Everyone,9868,1383
+1311,Operating Systems9e,9869,1384
+1312,Pattern Recognition and Image Analysis,9870,1385
+1313,Pointers in C,9871,1386
+1314,Thinking in C++: Introduction to Standard C++Vol I2e,9872,1387
+1315,Thinking in C++Vol II: Practical Programming,9873,1388
+1316,Applied Machine Learning,9924,1389
+1317,C++ Programming: An Object Oriented Approach,9925,1390
+1318,Computer Fundamentals and C Programming,9926,1391
+1319,Computing Fundamentals and C Programming,9927,1392
+1320,Data Analytics,9928,1393
+1321,Data Analytics using R,9929,1394
+1322,Data Science and Machine Learning using Python,9930,1395
+1323,Data Structures using C,9931,1396
+1324,Discrete Mathermatics with Graph Theory and Combinatorics,9932,1397
+1325,Fundamentals of Computers,9933,1398
+1326,Information TheoryCoding and Cryptography,9934,1399
+1327,Internet of Things,9935,1400
+1328,Introduction to Computing and Problem Solving using Python,9936,1401
+1329,Object Oriented Programming with C++,9937,1402
+1330,Programming and Problem Solving with Python,9938,1403
+1331,Programming for Problem Solving,9939,1404
+1332,Python Programming,9940,1405
+1333,Data Science and Machine Learning using Python,10032,1406
+1334,Computer Fundamentals and C Programming2e,10092,1407
+1335,Formal Languages and Automata Theory,10093,1408
+1336,Design and Analysis of Algorithms,10265,1409
+1337,Introduction to Database SystemsVol I3e,10266,1410
+1338,Textbook on Pattern Recognition,10267,1411
+1339,Data Structures and Algorithms in Java6e,10561,1412
+1340,Python for Data Science,10562,1413
+1341,Deep Learning using Python,10563,1414
+1342,Zero Trust Securuty: An Enterprise Guide,10653,1415
+1343,Deep Learning for NLP and Speech Recog,10654,1416
+1344,Machine Learning - A Practical Approach on Statistical Learning Theory,10655,1417
+1345,Geographical Data Science with Python,10687,1418
+1346,Formal Languages and Automata Theory,10745,1419
+1347,Cyber Security Essentials,10746,1420
+1348,Data Scieence and its Applications,10747,1421
+1349,Intro to OOP in C++ with Applications in Comp. Graphics,10748,1422
+1350,Comp. Networks - A Top-Down Approach,10752,1423
+1351,Data Comm and Networking with TCPIP protocol suite,10753,1424
+1352,Cyber Security and Cyber Laws,10785,1425
+1353,Design and Analysis of Algorithms,10786,1426
+1354,Digital Forensic,10787,1427
+1355,Operating Systems Concepts,10788,1428
+1356,Remote Sensing and Image Interpretation,10789,1429
+1357,Silberschatz's Operating System ConceptsGlobal Edition,10790,1430
+1358,Guide to teaching computer science,10817,1431
+1359,Computational methods for deep learning,10818,1432
+1360,IoT machine learning applications in telecomenergyand agriculture,10819,1433
+1361,CryptographyNetwork Security and Cyber Laws,10825,1434
+1362,Cyber security and cyber laws,10826,1435
+1363,Guide to computer forensics and investigations,10827,1436
+1364,Guide to computer forensics and investigations,10828,1437
+1365,Artificial Intelligence: Beyond Classical AI,10860,1438
+1366,C++ Programming Language4e,10861,1439
+1367,Cuda for Engineers,10862,1440
+1368,Digital Image Processing,10863,1441
+1369,Introduction to Automata TheoryLanguages and Computation4e,10864,1442
+1370,Machine Learning with Python for Everyone,10865,1443
+1371,Software testing,10866,1444
+1372,Unix and Linux handbook,10867,1445
+1373,Wireless CommunicationsPrinciples and Practice2e,10868,1446
+1374,Introduction to Data Science,10906,1447

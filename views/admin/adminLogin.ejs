@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Login - SLIET Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Add these additional styles */
+        @media (max-width: 640px) {
+            .nav-container {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            .logo-text {
+                max-width: 120px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'xs': '375px',
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px',
+                        '2xl': '1536px',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 min-h-screen">
+    <!-- Updated Navbar to match index.html -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div
+            class="relative flex items-center justify-between px-4 py-2 bg-white/10 backdrop-blur-md border-b border-white/10 shadow-lg">
+            <!-- Logo and Brand -->
+            <div class="flex items-center gap-3">
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo.png" alt="SLIET logo"
+                        class="w-11 h-11 rounded-full ring-2 ring-white/50 hover:scale-105 transition-transform" />
+                </a>
+                <span class="text-white/90 font-semibold text-base md:text-base">SLIET LIBRARY</span>
+            </div>
+
+            <!-- Navigation and Search Container -->
+            <div class="hidden md:flex items-center gap-4">
+                <!-- Navigation Buttons -->
+                <a href="/"
+                    class="px-4 py-1.5 text-sm text-white hover:bg-white/20 rounded-full transition duration-300 hover:scale-105">Home</a>
+                <a href="/pages/login/faculty"
+                    class="px-4 py-1.5 text-sm bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white rounded-full transition duration-300 hover:scale-105">Faculty
+                    Login</a>
+                <a href="/pages/login/admin"
+                    class="px-4 py-1.5 text-sm bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full transition duration-300 hover:scale-105">Admin
+                    Login</a>
+
+                <!-- Search Bar (moved inside navigation container) -->
+                <div class="relative w-72">
+                    <input type="text" placeholder="Search for books..."
+                        class="w-full px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all text-sm pr-10" />
+                    <button
+                        class="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+                        <i class="fas fa-search text-sm"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button id="menuBtn" class="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path class="hamburger" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                    <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="menu"
+                class="hidden absolute top-full left-0 right-0 bg-purple-900/95 backdrop-blur-md border-b border-white/10 p-4 md:hidden shadow-xl">
+                <div class="flex flex-col gap-4">
+                    <!-- Mobile Navigation -->
+                    <div class="flex flex-col gap-3">
+                        <a href="/"
+                            class="px-4 py-2.5 text-white hover:bg-white/20 rounded-lg transition text-center text-sm font-medium">Home</a>
+                        <a href="/pages/login/faculty"
+                            class="px-4 py-2.5 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white rounded-lg transition text-center text-sm font-medium">Faculty
+                            Login</a>
+                        <a href="/pages/login/admin"
+                            class="px-4 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-lg transition text-center text-sm font-medium">Admin
+                            Login</a>
+                    </div>
+
+                    <!-- Mobile Search -->
+                    <div class="relative">
+                        <input type="text" placeholder="Search for books..."
+                            class="w-full px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all text-sm" />
+                        <button
+                            class="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/10">
+                            <i class="fas fa-search text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <div class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20">
+        <div class="w-full max-w-[320px] xs:max-w-[380px] sm:max-w-md space-y-6 sm:space-y-8 relative">
+            <!-- Background Shapes -->
+            <div class="absolute inset-0 -z-10">
+                <div
+                    class="absolute -top-20 -left-20 w-40 sm:w-60 h-40 sm:h-60 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+                </div>
+                <div
+                    class="absolute -bottom-20 md:-bottom-12 right-12 md:-right-20 w-40 sm:w-60 h-40 sm:h-60 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div class="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-xl border border-white/20 shadow-2xl">
+                <div class="text-center">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Admin Login</h2>
+                    <p class="text-purple-200 text-xs sm:text-sm">Access administrative dashboard</p>
+                </div>
+
+                <form id="adminLoginForm" class="mt-6 sm:mt-8 space-y-4 sm:space-y-6">
+                    <div class="space-y-3 sm:space-y-4">
+                        <div>
+                            <label for="username" class="sr-only">Username</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-user-shield text-rose-300 text-sm sm:text-base"></i>
+                                </div>
+                                <input id="username" name="username" type="text" required
+                                    class="block w-full pl-10 pr-3 py-2.5 sm:py-2 text-sm sm:text-base border border-white/20 rounded-md bg-white/10 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    placeholder="Username">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="password" class="sr-only">Password</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-lock text-rose-300 text-sm sm:text-base"></i>
+                                </div>
+                                <input id="password" name="password" type="password" required
+                                    class="block w-full pl-10 pr-3 py-2.5 sm:py-2 text-sm sm:text-base border border-white/20 rounded-md bg-white/10 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col xs:flex-row items-start xs:items-center justify-between gap-3 xs:gap-0">
+                        <div class="flex items-center">
+                            <input id="remember-me" name="remember-me" type="checkbox"
+                                class="h-4 w-4 rounded border-white/20 bg-white/10 focus:ring-purple-500">
+                            <label for="remember-me" class="ml-2 block text-xs sm:text-sm text-purple-200">Remember
+                                me</label>
+                        </div>
+                        <a href="#" class="text-xs sm:text-sm text-purple-300 hover:text-purple-200">Forgot
+                            password?</a>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full flex justify-center py-3 sm:py-2.5 px-4 text-sm sm:text-base font-medium text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-md shadow-sm transform transition hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                        Sign in
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Updated Script to match index.html -->
+     <script src="/js/admin/login.js"></script>
+    <script>
+        // Hamburger Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+        const hamburger = menuBtn.querySelector('.hamburger');
+        const close = menuBtn.querySelector('.close');
+        const navbar = document.getElementById('navbar');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            hamburger.classList.toggle('hidden');
+            close.classList.toggle('hidden');
+            // Add backdrop blur when menu is open
+            if (!menu.classList.contains('hidden')) {
+                navbar.classList.add('bg-purple-900/95');
+            } else if (window.scrollY <= 50) {
+                navbar.classList.remove('bg-purple-900/95');
+            }
+        });
+
+        // Enhanced Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-purple-900/95');
+                navbar.classList.remove('bg-white/10');
+            } else if (menu.classList.contains('hidden')) {
+                navbar.classList.remove('bg-purple-900/95');
+                navbar.classList.add('bg-white/10');
+            }
+        });
+
+        // Add touch event handling for mobile
+        document.addEventListener('touchstart', function () { }, false);
+
+        // Improve scroll handling
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('bg-purple-900/95');
+            } else {
+                nav.classList.remove('bg-purple-900/95');
+            }
+        }, { passive: true });
+
+        // Add animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes blob {
+                0% { transform: translate(0px, 0px) scale(1); }
+                33% { transform: translate(30px, -50px) scale(1.1); }
+                66% { transform: translate(-20px, 20px) scale(0.9); }
+                100% { transform: translate(0px, 0px) scale(1); }
+            }
+            .animate-blob {
+                animation: blob 7s infinite;
+            }
+            .animation-delay-2000 {
+                animation-delay: 2s;
+            }
+            /* Add responsive font sizes */
+            @media (max-width: 640px) {
+                html { font-size: 14px; }
+            }
+            /* Improve touch targets on mobile */
+            @media (max-width: 767px) {
+                button, a { min-height: 44px; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

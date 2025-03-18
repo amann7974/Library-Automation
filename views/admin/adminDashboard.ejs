@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - SLIET Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Add overflow-x-hidden to prevent horizontal scroll on mobile -->
+    <div class="flex h-screen overflow-x-hidden">
+      <!-- Update sidebar to be fixed on mobile -->
+      <aside
+        class="fixed md:static top-0 left-0 h-full -translate-x-full md:translate-x-0 bg-gradient-to-b from-purple-900 to-indigo-900 w-64 flex-shrink-0 transition-transform duration-300 ease-in-out z-40"
+        id="sidebar"
+      >
+        <div class="p-4 border-b border-white/10">
+          <div class="flex items-center gap-3">
+            <img
+              src="/images/logo.png"
+              alt="SLIET logo"
+              class="w-10 h-10 rounded-full ring-2 ring-white/50"
+            />
+            <h1 class="text-white font-semibold">SLIET LIBRARY</h1>
+          </div>
+        </div>
+
+        <nav class="p-4 space-y-2">
+          <a
+            href="/pages/admin/dashboard/"
+            class="flex items-center gap-3 text-white/90 p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+          >
+            <i class="fas fa-chart-pie"></i>
+            <span>Dashboard</span>
+          </a>
+          <a
+            href="/pages/admin/dashboard/books"
+            class="flex items-center gap-3 text-white/90 p-3 rounded-lg hover:bg-white/10 transition-colors"
+          >
+            <i class="fas fa-book"></i>
+            <span>Books</span>
+          </a>
+          <a
+            href="/pages/admin/dashboard/users"
+            class="flex items-center gap-3 text-white/90 p-3 rounded-lg hover:bg-white/10 transition-colors"
+          >
+            <i class="fas fa-users"></i>
+            <span>Users</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col overflow-hidden w-full">
+        <!-- Updated Header with better mobile spacing -->
+        <header class="bg-white shadow-sm">
+          <div class="flex items-center justify-between p-4">
+            <button id="sidebarToggle"
+              class="md:hidden text-gray-600 hover:text-gray-900 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+        
+            <!-- Right side header content -->
+            <div class=" w-full flex items-center justify-between gap-6">
+              <div class="relative">
+                <input type="text" 
+                       id="searchBook" 
+                       placeholder="Search books, users..."
+                       class="w-48 md:w-64 px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm md:text-base"
+                >
+                <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-search"></i>
+                </button>
+              </div>
+        
+              <div class="flex items-center gap-3 ml-auto mr-4">
+                <img id="userProfilePic" src="https://ui-avatars.com/api/?name=Unknown" alt="Admin"
+                  class="w-8 h-8 rounded-full">
+                <span id="userFullName" class="text-gray-700 font-medium hidden  md:flex">Unknown</span>
+                <a href="/api/logout" class="text-red-600 hover:text-red-700 ml-4" title="Logout">
+                  <i class="fas fa-sign-out-alt text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Updated Main Content Area -->
+        <main class="flex-1 overflow-y-auto bg-gray-50 p-6">
+          <!-- Updated Dashboard Stats -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+            <!-- Total Books Card -->
+            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <div class="flex items-center gap-4">
+                <div class="p-3 bg-purple-100 rounded-lg">
+                  <i class="fas fa-book text-2xl text-purple-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-gray-500 text-sm">Total Books</h3>
+                  <p class="text-2xl font-semibold text-gray-900" id="totalBooksCount">0</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Total Users Card -->
+            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <div class="flex items-center gap-4">
+                <div class="p-3 bg-blue-100 rounded-lg">
+                  <i class="fas fa-users text-2xl text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-gray-500 text-sm">Total Users</h3>
+                  <p class="text-2xl font-semibold text-gray-900" id="totalUsersCount">0</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Books Issued Card -->
+            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <div class="flex items-center gap-4">
+                <div class="p-3 bg-green-100 rounded-lg">
+                  <i class="fas fa-book-reader text-2xl text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-gray-500 text-sm">Books Issued</h3>
+                  <p class="text-2xl font-semibold text-gray-900" id="issuedBooksCount">0</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Overdue Books Card -->
+            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <div class="flex items-center gap-4">
+                <div class="p-3 bg-red-100 rounded-lg">
+                  <i class="fas fa-clock text-2xl text-red-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-gray-500 text-sm">Overdue Books</h3>
+                  <p class="text-2xl font-semibold text-gray-900" id="overdueCount">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Updated Books Table with Icon Buttons -->
+          <div
+            class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden mb-6"
+          >
+            <div
+              class="p-6 border-b border-gray-100 flex justify-between items-center"
+            >
+              <h2 class="text-lg font-semibold text-gray-900">Manage Books</h2>
+              <button
+                id="addBookBtn"
+                class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+              >
+                Add New Book
+              </button>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Title
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Total Copies
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Available Copies
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="booksTableBody" class="divide-y divide-gray-100">
+                  <!-- Books will be dynamically inserted here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- New Users Table Section -->
+          <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+              <h2 class="text-lg font-semibold text-gray-900">Recent Users</h2>
+              <a href="/pages/admin/dashboard/users" class="text-purple-600 hover:text-purple-700">View All</a>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Sno</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Name</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Email</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Username</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Role</th>
+                  </tr>
+                </thead>
+                <tbody id="recentUsersTable" class="divide-y divide-gray-100">
+                  <!-- Users will be dynamically inserted here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Updated overlay with higher z-index -->
+    <div
+      id="sidebarOverlay"
+      class="fixed inset-0 bg-black/50 hidden z-30"
+      aria-hidden="true"
+    ></div>
+
+    <script src="/js/admin/secureDashboard.js"></script>
+
+    <!-- Updated Script with improved mobile handling -->
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      const sidebarToggle = document.getElementById("sidebarToggle");
+      const overlay = document.getElementById("sidebarOverlay");
+
+      // Toggle sidebar function
+      function toggleSidebar() {
+        const isOpen = !sidebar.classList.contains("-translate-x-full");
+
+        if (isOpen) {
+          // Close sidebar
+          sidebar.classList.add("-translate-x-full");
+          overlay.classList.add("hidden");
+          document.body.classList.remove("overflow-hidden");
+        } else {
+          // Open sidebar
+          sidebar.classList.remove("-translate-x-full");
+          overlay.classList.remove("hidden");
+          document.body.classList.add("overflow-hidden");
+        }
+      }
+
+      // Event Listeners
+      sidebarToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleSidebar();
+      });
+
+      overlay.addEventListener("click", toggleSidebar);
+
+      // Close sidebar when clicking outside
+      document.addEventListener("click", (e) => {
+        const isOpen = !sidebar.classList.contains("-translate-x-full");
+        const clickedInside =
+          sidebar.contains(e.target) || sidebarToggle.contains(e.target);
+
+        if (isOpen && !clickedInside) {
+          toggleSidebar();
+        }
+      });
+
+      // Handle screen resize
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          sidebar.classList.remove("-translate-x-full");
+          overlay.classList.add("hidden");
+          document.body.classList.remove("overflow-hidden");
+        } else {
+          sidebar.classList.add("-translate-x-full");
+        }
+      });
+
+      // Prevent sidebar content clicks from closing
+      sidebar.addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+
+      // Add touch event handling
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      document.addEventListener(
+        "touchstart",
+        (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        },
+        { passive: true }
+      );
+
+      document.addEventListener(
+        "touchend",
+        (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          handleSwipe();
+        },
+        { passive: true }
+      );
+
+      function handleSwipe() {
+        const SWIPE_THRESHOLD = 50;
+        const isOpen = !sidebar.classList.contains("-translate-x-full");
+
+        if (touchEndX - touchStartX > SWIPE_THRESHOLD && !isOpen) {
+          // Swipe right, open sidebar
+          toggleSidebar();
+        } else if (touchStartX - touchEndX > SWIPE_THRESHOLD && isOpen) {
+          // Swipe left, close sidebar
+          toggleSidebar();
+        }
+      }
+    </script>
+
+    <!-- Modal -->
+    <div
+      id="addBookModal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
+    >
+      <div
+        class="bg-white rounded-xl shadow-lg w-full max-w-md mx-4 overflow-hidden"
+      >
+        <!-- Modal Header -->
+        <div
+          class="p-4 border-b border-gray-100 flex justify-between items-center bg-gradient-to-r from-purple-900 to-indigo-900"
+        >
+          <h3 class="text-lg font-semibold text-white">Add New Book</h3>
+          <button id="closeModal" class="text-white hover:text-gray-200">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="p-6">
+          <form id="addBookForm" class="space-y-4">
+            <div>
+              <label
+                for="bookTitle"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Book Title</label
+              >
+              <input
+                type="text"
+                id="bookTitle"
+                name="title"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400"
+              />
+            </div>
+            <div>
+              <label
+                for="totalCopies"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Total Copies</label
+              >
+              <input
+                type="number"
+                id="totalCopies"
+                name="totalCopies"
+                required
+                min="1"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400"
+              />
+            </div>
+            <div class="flex justify-end gap-3 mt-6">
+              <button
+                type="button"
+                id="cancelBtn"
+                class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
+              >
+                Add Book
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Book Modal -->
+    <div id="editBookModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-xl shadow-lg w-full max-w-md mx-4 overflow-hidden">
+            <!-- Modal Header -->
+            <div class="p-4 border-b border-gray-100 flex justify-between items-center bg-gradient-to-r from-purple-900 to-indigo-900">
+                <h3 class="text-lg font-semibold text-white">Edit Book</h3>
+                <button id="closeEditModal" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6">
+                <form id="editBookForm" class="space-y-4">
+                    <input type="hidden" id="editBookId" name="bookId">
+                    <div>
+                        <label for="editBookTitle" class="block text-sm font-medium text-gray-700 mb-1">Book Title</label>
+                        <input type="text" id="editBookTitle" name="title" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400">
+                    </div>
+                    <div>
+                        <label for="editTotalCopies" class="block text-sm font-medium text-gray-700 mb-1">Total Copies</label>
+                        <input type="number" id="editTotalCopies" name="totalCopies" required min="1"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400">
+                    </div>
+                    <div class="flex justify-end gap-3 mt-6">
+                        <button type="button" id="cancelEditBtn"
+                            class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                            Cancel
+                        </button>
+                        <button type="submit"
+                            class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+                            Update Book
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/admin/dashboard.js"></script>
+  </body>
+</html>
